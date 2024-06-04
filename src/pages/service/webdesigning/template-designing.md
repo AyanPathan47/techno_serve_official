@@ -13,7 +13,7 @@ faqtext3: "Techno Serve Ltd specializes in delivering personalized template desi
 ---
  # Custom Template Designing
 
-![fashion design template](https://technoservesolutions.com/wp-content/uploads/2021/10/Web-Developer_Isometric.png)
+![fashion design template](/public/assets/img/service/template-design.png)
 
 ### What is Custom Template Design?
 

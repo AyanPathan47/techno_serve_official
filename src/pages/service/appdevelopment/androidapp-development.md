@@ -19,7 +19,7 @@ faqtext3: "Some important principles of Android App UI/UX Design include:
 
 # Android App Development
 
-![top android app development company](https://technoservesolutions.com/wp-content/uploads/2021/10/Landing-Page_Flatline.png)
+![top android app development company](/assets/img/service/app-development.png)
 
 ### Business Objective
 

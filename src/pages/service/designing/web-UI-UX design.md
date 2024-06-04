@@ -13,7 +13,7 @@ faqtext3: "After launching an app, it's essential to monitor its performance thr
 ---
  # Responsive Web Design
 
-![logo design services](https://technoservesolutions.com/wp-content/uploads/2021/10/undraw_Gifts_re_97j6.svg)
+![logo design services](/public/assets/img/service/website-UI-UX-design.png)
 
 ### What is Responsive Web Design?
 

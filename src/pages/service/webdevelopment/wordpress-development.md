@@ -15,7 +15,7 @@ faqtext3: "To leverage WordPress development effectively, consider working with 
 # WordPress  
 Development
 
-![web development](https://technoservesolutions.com/wp-content/uploads/2021/09/PngItem_5312189.png)
+![web development](/public/assets/img/service/wordpress-development.jpg)
 
 ### Why Choose WordPress
 

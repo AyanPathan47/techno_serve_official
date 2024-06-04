@@ -14,7 +14,7 @@ faqtext3: "Following Apple's Human Interface Guidelines ensures that your iOS ap
 
 # IOS App Development
 
-![iOS App Development](https://technoservesolutions.com/wp-content/uploads/2021/10/app-user-colour-1200px.png)
+![iOS App Development](/assets/img/service/ios-development.png)
 
 ### Identify Your Target Audience
 

@@ -14,7 +14,7 @@ faqtext3: "Techno Serve Ltd offers a comprehensive School Management System that
 
 # School Management System Solutions
 
-![school management system](https://technoservesolutions.com/wp-content/uploads/2021/10/Product-Manager_Flatline.png)
+![school management system](/public/assets/img/service/school-management-system.png)
 
 ### What is a School Management System?
 

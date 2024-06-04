@@ -19,7 +19,7 @@ faqtext3: "Techno Serve's iCharms is a specialized charity management software d
 
 # Charity Management System
 
-![logo design services](https://technoservesolutions.com/wp-content/uploads/2021/10/undraw_Gifts_re_97j6.svg)
+![logo design services](/assets/img/service/charity-management.jpg)
 
 ### What is Charity Management System?
 

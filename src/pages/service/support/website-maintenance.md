@@ -13,7 +13,7 @@ faqtext3: "Techno Serve Ltd offers comprehensive website maintenance services de
 ---
  # Website Maintenance Services
 
-![logo design services](https://technoservesolutions.com/wp-content/uploads/2021/10/undraw_Gifts_re_97j6.svg)
+![logo design services](/public/assets/img/service/website-maintenance.png)
 
 ### What Is Website Maintenance?
 
