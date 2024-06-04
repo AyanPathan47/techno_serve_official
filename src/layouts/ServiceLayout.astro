@@ -1,0 +1,229 @@
+---
+import Layout from "../layouts/Layout.astro";
+const { frontmatter } = Astro.props;
+
+const url = Astro.url.pathname;
+const segments = url.split('/'); // Split the URL by '/'
+const folderName = segments[segments.length - 2]; // Get the folder name (second last segment)
+
+// Fetch all markdown files
+const allServices = await Astro.glob('../pages/service/**/*.md');
+
+// Filter markdown files to only include those in the desired folder
+const services = allServices.filter(service => service.file.includes(`/${folderName}/`));
+
+---
+
+<Layout title={frontmatter.title + "- Techno Serve Solution"}>
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div
+        class="breadcrumb-area bg-gray bg-cover"
+        style="background-image: url(/assets/img/shape/banner-3.jpg);"
+    >
+        <div class="container">
+            <div class="breadcrumb-item">
+                <div class="breadcrum-shape">
+                    <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/"
+                                        ><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li>Service</li><li>{url}</li>
+                                <li class="active">{frontmatter.title}</li><li>{folderName
+                                }</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Star Services Details Area
+    ============================================= -->
+    <div class="services-details-area default-padding">
+        <div class="container">
+            <div class="services-details-items">
+                <div class="row">
+                    <div
+                        class="col-xl-8 col-lg-7 pr-45 pr-md-15 pr-xs-15 services-single-content"
+                    >
+                        <div class="service-single-thumb"></div>
+                        <slot />
+
+                        <div class="faq-style-one service-faq mt-40">
+                            <h2 class="mb-30">Questions about service</h2>
+                            <div class="accordion mt--20" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h2
+                                        class="accordion-header"
+                                        id="headingOne"
+                                    >
+                                        <button
+                                            class="accordion-button"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne"
+                                            aria-expanded="true"
+                                            aria-controls="collapseOne"
+                                        >
+                                            {frontmatter.faqtitle1}
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseOne"
+                                        class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne"
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                {frontmatter.faqtext1}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2
+                                        class="accordion-header"
+                                        id="headingTwo"
+                                    >
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo"
+                                            aria-expanded="false"
+                                            aria-controls="collapseTwo"
+                                        >
+                                            {frontmatter.faqtitle2}
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseTwo"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo"
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                {frontmatter.faqtext2}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2
+                                        class="accordion-header"
+                                        id="headingThree"
+                                    >
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree"
+                                            aria-expanded="false"
+                                            aria-controls="collapseThree"
+                                        >
+                                            {frontmatter.faqtitle3}
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseThree"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree"
+                                        data-bs-parent="#faqAccordion"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                {frontmatter.faqtext3}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar"
+                    >
+
+
+                    <!-- <div>
+                        {posts.slice(0, 3).map((post) => (
+                          <article>
+                            <h2>{post.frontmatter.title}</h2>
+                            <p>{post.frontmatter.description}</p>
+                            <a href={post.url}>Read more</a>
+                          </article>
+                        ))}
+                        </div> -->
+
+                        <!-- Single Widget -->
+                        <div class="single-widget services-list-widget">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+
+                                {services.map((service) => (
+                                    <ul>
+                                      <li><a  href={service.url}> {service.frontmatter.title}<i class="fas fa-angle-right"></i></a></li> 
+                                    </ul>
+                                  ))}
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                        <div
+                            class="single-widget quick-contact-widget text-light"
+                            style="background-image: url(/assets/img/800x900.png);"
+                        >
+                            <div class="content">
+                                <h3>Need Help?</h3>
+                                <p>
+                                    Speak with a human to filling out a form?
+                                    call corporate office and we will connect.
+                                </p>
+                                <h2>+(012) 6679545</h2>
+                                <h4>
+                                    <a href="mailto:info@digital.com"
+                                        >info@technoservesolutions.com</a>
+                                </h4>
+                                <a
+                                    class="btn mt-30 circle btn-sm btn-gradient"
+                                    href="/contact">Contact Us</a
+                                >
+                            </div>
+                        </div>
+                        <!-- Single Widget -->
+                        <div class="single-widget widget-brochure">
+                            <h4 class="widget-title">Brochure</h4>
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fas fa-file-pdf"></i> Download
+                                        Brochure
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fas fa-file-pdf"></i> Company
+                                        Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services Details Area -->
+</Layout>
