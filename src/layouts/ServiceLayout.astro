@@ -12,7 +12,7 @@ const allServices = await Astro.glob('../pages/service/**/*.md');
 // Filter markdown files to only include those in the desired folder
 const services = allServices.filter(service => service.file.includes(`/${folderName}/`));
 
----
+---~
 
 <Layout title={frontmatter.title + "- Techno Serve Solution"}>
     <!-- Start Breadcrumb 
