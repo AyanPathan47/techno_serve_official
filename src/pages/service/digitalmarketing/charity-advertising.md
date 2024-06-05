@@ -12,7 +12,7 @@ faqtext3: "Facebook Ads PPC enables advertisers to target customers based on dem
 
 # Advertising
 
-![online advertising](https://technoservesolutions.com/wp-content/uploads/2021/09/Marketing_Isometric-1.svg)
+![online advertising](/assets/img/service/charity-advertising.png)
 
 ## What is PPC (Online Advertising)
 

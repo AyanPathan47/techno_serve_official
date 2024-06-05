@@ -14,7 +14,7 @@ faqtext3: "To optimize your landing page for lead generation, focus on creating 
 
 # Landing Page Designing
 
-![Landing Page Designing](/public/assets/img/service/landing-page-design.png)
+![Landing Page Designing](/assets/img/service/landing-page-design.png)
 
 ### What is Landing Page Design?
 

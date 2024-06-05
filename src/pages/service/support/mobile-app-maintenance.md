@@ -14,7 +14,7 @@ faqtext3: "After launching an app, it's essential to monitor its performance thr
 
 # Mobile App Maintenance
 
-![Mobile App Maintenance](/public/assets/img/service/mobile-app-maintenance.png)
+![Mobile App Maintenance](/assets/img/service/mobile-app-maintenance.png)
 
 ### Why care about app maintenance?
 

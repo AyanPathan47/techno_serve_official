@@ -19,7 +19,7 @@ faqtext3: "Some important principles of Android UI & UX Design include:
 
 # Android UI & UX Design
 
-![logo design services](/public/assets/img/service/app-UI-UX-design.png)
+![Android UI & UX Design](/assets/img/service/app-UI-UX-design.png)
 
 ### Some Important Key Factor That Should Keep in Mind
 

@@ -13,7 +13,7 @@ faqtext3: "Techno Serve Ltd specializes in delivering high-quality website devel
 ---
  # Website Development Services
 
-![logo design services](/public/assets/img/service/website-development.jpg)
+![Website Development Services](/assets/img/service/website-development.jpg)
 
 ### What is Website Development?
 

@@ -13,7 +13,7 @@ faqtext3: "After redesigning a website, it's essential to monitor its performanc
 
 # Website Redesigning
 
-![digital asset management software vendors](/public/assets/img/service/web-redesign.jpg)
+![Website Redesigning](/assets/img/service/web-redesign.jpg)
 
 ### What is Website Redesign?
 

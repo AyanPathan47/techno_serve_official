@@ -14,7 +14,7 @@ faqtext3: "SEO can help your business grow by increasing your online visibility,
 
 # Search Engine Optimization
 
-![](https://technoservesolutions.com/wp-content/uploads/2021/09/SEO_Isometric.png)
+![Search Engine Optimization](/assets/img/service/charity-search-engine-optimisation.png)
 
 ### What is SEO?
 

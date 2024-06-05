@@ -13,7 +13,7 @@ faqtext3: "After redesigning a website, it's essential to monitor its performanc
 
 # Remarketing
 
-![](https://technoservesolutions.com/wp-content/uploads/2021/09/Marketing-_Isometric.png)
+![Remarketing](/assets/img/service/charity-ads-remarketing.png)
 
 ### What is Remarketing?
 

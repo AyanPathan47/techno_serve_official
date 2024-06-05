@@ -14,7 +14,7 @@ faqtext3: "After launching an app, it's essential to monitor its performance thr
 
 ## React Native App Development
 
-![react native for web app](/public/assets/img/service/reactnative-app-development.png)
+![react native for web app](/assets/img/service/reactnative-app-development.png)
 
 ### Fast Refresh
 

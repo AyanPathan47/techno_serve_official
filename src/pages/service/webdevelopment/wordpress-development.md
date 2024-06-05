@@ -12,10 +12,9 @@ faqtext3: "To leverage WordPress development effectively, consider working with 
 
 ---
 
-# WordPress  
-Development
+# WordPress  Development
 
-![web development](/public/assets/img/service/wordpress-development.jpg)
+![WordPress  Development](/assets/img/service/wordpress-development.jpg)
 
 ### Why Choose WordPress
 
