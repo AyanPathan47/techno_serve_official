@@ -1,9 +1,24 @@
 ---
+// import Layout from "../layouts/Layout.astro";
+// const { frontmatter } = Astro.props;
+
+// const url = Astro.url.pathname;
+// const segments = url.split('/'); // Split the URL by '/'
+// const folderName = segments[segments.length - 2]; // Get the folder name (second last segment)
+
+// // Fetch all markdown files
+// const allServices = await Astro.glob('../pages/service/**/*.md');
+
+// // Filter markdown files to only include those in the desired folder
+// const services = allServices.filter(service => service.file.includes(`/${folderName}/`));
+
 import Layout from "../layouts/Layout.astro";
 const { frontmatter } = Astro.props;
 
 const url = Astro.url.pathname;
-const segments = url.split('/'); // Split the URL by '/'
+const serviceIndex = url.indexOf('/service'); // Find where /service starts in the URL
+const servicePath = url.substring(serviceIndex); // Extract the path starting from /service
+const segments = servicePath.split('/'); // Split the service path by '/'
 const folderName = segments[segments.length - 2]; // Get the folder name (second last segment)
 
 // Fetch all markdown files
@@ -11,6 +26,7 @@ const allServices = await Astro.glob('../pages/service/**/*.md');
 
 // Filter markdown files to only include those in the desired folder
 const services = allServices.filter(service => service.file.includes(`/${folderName}/`));
+
 ---
 
 <Layout title={frontmatter.title + "- Techno Serve Solution"}>
