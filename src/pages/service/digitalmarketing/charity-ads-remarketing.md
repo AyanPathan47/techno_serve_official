@@ -13,7 +13,7 @@ faqtext3: "After redesigning a website, it's essential to monitor its performanc
 
 # Remarketing
 
-![Remarketing](/assets/img/service/charity-ads-remarketing.png)
+<img src="/assets/img/service/charity-ads-remarketing.png" alt="Remarketing" style="width: 500px"><br><br>
 
 ### What is Remarketing?
 

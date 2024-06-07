@@ -13,7 +13,7 @@ faqtext3: "After launching an app, it's essential to monitor its performance thr
 ---
  # Responsive Web Design
 
-![Responsive Web Design](/assets/img/service/website-UI-UX-design.png)
+<img src="/assets/img/service/website-UI-UX-design.png" alt="Responsive Web Design" style="width: 500px"><br><br>
 
 ### What is Responsive Web Design?
 

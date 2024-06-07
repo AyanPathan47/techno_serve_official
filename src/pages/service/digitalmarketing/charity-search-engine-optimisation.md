@@ -14,7 +14,7 @@ faqtext3: "SEO can help your business grow by increasing your online visibility,
 
 # Search Engine Optimization
 
-![Search Engine Optimization](/assets/img/service/charity-search-engine-optimisation.png)
+<img src="/assets/img/service/charity-search-engine-optimisation.png" alt="Search Engine Optimization" style="width: 500px"><br><br>
 
 ### What is SEO?
 

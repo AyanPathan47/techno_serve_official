@@ -13,7 +13,7 @@ faqtext3: "Techno Serve Ltd offers professional WordPress theme design services 
 ---
 # WordPress Theme Design Services
 
-![WordPress Theme Design Services](/assets/img/service/wordpress-theme-design.png)
+<img src="/assets/img/service/wordpress-theme-design.png" alt="WordPress Theme Design Services" style="width: 500px"><br><br>
 
 ### What Is a WordPress Theme?
 

@@ -14,7 +14,7 @@ faqtext3: "To leverage WordPress development effectively, consider working with 
 
 # WordPress  Development
 
-![WordPress  Development](/assets/img/service/wordpress-development.jpg)
+<img src="/assets/img/service/wordpress-development.jpg" alt="WordPress  Development" style="width: 500px"><br><br>
 
 ### Why Choose WordPress
 

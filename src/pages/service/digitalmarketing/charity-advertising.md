@@ -12,7 +12,7 @@ faqtext3: "Facebook Ads PPC enables advertisers to target customers based on dem
 
 # Advertising
 
-![online advertising](/assets/img/service/charity-advertising.png)
+<img src="/assets/img/service/charity-advertising.png" alt="online advertising" style="width: 500px"><br><br>
 
 ## What is PPC (Online Advertising)
 

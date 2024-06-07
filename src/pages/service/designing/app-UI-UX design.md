@@ -19,7 +19,7 @@ faqtext3: "Some important principles of Android UI & UX Design include:
 
 # Android UI & UX Design
 
-![Android UI & UX Design](/assets/img/service/app-UI-UX-design.png)
+<img src="/assets/img/service/app-UI-UX-design.png" alt="Android UI & UX Design" style="width: 500px"><br><br>
 
 ### Some Important Key Factor That Should Keep in Mind
 
@@ -29,10 +29,12 @@ faqtext3: "Some important principles of Android UI & UX Design include:
 4.  Colours
 5.  UI Elements
 
+<br>    
+
 ### White Space
 
-**Margins  
-**To ensure consistent margins around content, use grids and key lines. More on this later. Include margins in your symbols; for example, if your card always has an 8dp margin around it, include it with the symbol.
+Margins  
+To ensure consistent margins around content, use grids and key lines. More on this later. Include margins in your symbols; for example, if your card always has an 8dp margin around it, include it with the symbol.
 
 **Paddings**  
 In Sketch, create fixed padding symbols and use resizing constraints.

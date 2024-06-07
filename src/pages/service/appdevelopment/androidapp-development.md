@@ -19,7 +19,8 @@ faqtext3: "Some important principles of Android App UI/UX Design include:
 
 # Android App Development
 
-![Android App Development](/assets/img/service/app-development.png)
+<!-- ![Android App Development](/assets/img/service/app-development.png) -->
+<img src="/assets/img/service/app-development.png" alt="Android App Development" style="width: 500px"><br><br>
 
 ### Business Objective
 

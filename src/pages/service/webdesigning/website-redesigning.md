@@ -13,7 +13,7 @@ faqtext3: "After redesigning a website, it's essential to monitor its performanc
 
 # Website Redesigning
 
-![Website Redesigning](/assets/img/service/web-redesign.jpg)
+<img src="/assets/img/service/web-redesign.jpg" alt="Website Redesigning" style="width: 500px"><br><br>
 
 ### What is Website Redesign?
 

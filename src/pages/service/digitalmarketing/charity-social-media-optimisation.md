@@ -14,7 +14,8 @@ faqtext3: "Techno Serve Ltd offers comprehensive Social Media Optimization Servi
 
 # Social Media Optimization Services
 
-![Social Media Optimization](/assets/img/service/charity-social-media-optimisation.png)
+<img src="/assets/img/service/charity-social-media-optimisation.png" alt="Social Media Optimization" style="width: 500px"><br><br>
+
 ### What is Social Media Optimization?
 
 Social Media Optimization (SMO) is a marketing strategy aimed at optimizing a company's presence on social media platforms to increase brand visibility, engage with the audience, and drive website traffic. It involves creating and sharing relevant content, interacting with followers, and analyzing performance metrics to refine strategies.

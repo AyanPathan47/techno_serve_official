@@ -13,7 +13,8 @@ faqtext3: "Effective content marketing encompasses a variety of content types, i
 
 # Content Marketing
 
-![Content marketing](/assets/img/service/charity-content-marketing.png)
+<img src="/assets/img/service/charity-content-marketing.png" alt="Content marketing" style="width: 500px"><br><br>
+
 ### What is Content Marketing?
 
 Content marketing is a strategy of promoting or communicating a product, service, or idea to customers using content.

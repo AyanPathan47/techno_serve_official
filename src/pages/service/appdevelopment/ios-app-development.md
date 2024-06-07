@@ -14,7 +14,7 @@ faqtext3: "Following Apple's Human Interface Guidelines ensures that your iOS ap
 
 # IOS App Development
 
-![iOS App Development](/assets/img/service/ios-development.png)
+<img src="/assets/img/service/ios-development.png" alt="iOS App Development" style="width: 500px"><br><br>
 
 ### Identify Your Target Audience
 

@@ -13,7 +13,7 @@ faqtext3: "Techno Serve Ltd specializes in delivering personalized template desi
 ---
  # Custom Template Designing
 
-![Custom Template Designing](/assets/img/service/template-design.png)
+<img src="/assets/img/service/template-design.png" alt="Custom Template Designing" style="width: 500px"><br><br>
 
 ### What is Custom Template Design?
 
