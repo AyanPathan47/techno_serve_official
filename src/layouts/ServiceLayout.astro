@@ -1,12 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import serviceList from '../../public/assets/js/service-list'; 
+import serviceList from "../../public/assets/js/service-list";
 const { frontmatter } = Astro.props;
 
 const url = Astro.url.pathname;
-const segments = url.split('/'); // Split the URL by '/'
+const segments = url.split("/"); // Split the URL by '/'
 const folderName = segments[segments.length - 3];
-
 ---
 
 <Layout title={frontmatter.title + "- Techno Serve Solution"}>
@@ -27,7 +26,8 @@ const folderName = segments[segments.length - 3];
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="/"
-                                        ><i class="fas fa-home"></i> Home</a>
+                                        ><i class="fas fa-home"></i> Home</a
+                                    >
                                 </li>
                                 <li>Service</li>
                                 <li>{folderName}</li>
@@ -150,88 +150,68 @@ const folderName = segments[segments.length - 3];
                     <div
                         class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar"
                     >
-
-                        <!-- Single Widget -->
-                        <!-- <div class="single-widget services-list-widget">
-                            <h4 class="widget-title">Services</h4>
-                            <ul>
-
-                                {services.map((service) => (
-                                    <ul>
-                                      <li><a  href={service.url}> {service.frontmatter.title}<i class="fas fa-angle-right"></i></a></li> 
-                                    </ul>
-                                  ))}
-                            </ul>
-                        </div> -->
-
-                        <!-- <div class="single-widget services-list-widget">
-                            <h4 class="widget-title">Services</h4>
-                            <ul>
-
-                                {services.map((service) => (
-                                    <ul>
-                                      <li><a  href={service.url}> {service.frontmatter.title}<i class="fas fa-angle-right"></i></a></li> 
-                                    </ul>
-                                  ))}
-                            </ul>
-                        </div> -->
-
-                        <!-- <div class="single-widget services-list-widget">
-                            <h4 class="widget-title">Services</h4>
-                            <ul>
-                                {Object.keys(serviceList).map((category) => (
-                                    <li key={category}>
-                                        <ul>
-                                            {Object.keys(serviceList[category]).map((service) => {
-                                                // Filter out data according to JSON format
-                                                if (serviceList[category][service] !== "") {
-                                                    return (
-                                                        <li key={service}>
-                                                            <a href={serviceList[category][service]}>{service.replace('.md', '').replace(/-([a-z])/g, (match, letter) => letter.toUpperCase())}<i class="fas fa-angle-right"></i></a>
-                                                        </li>
-                                                    );
-                                                }
-                                                return null;
-                                            })}
-                                        </ul>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div> -->
-
-
                         <div class="single-widget services-list-widget">
                             <h4 class="widget-title">Services</h4>
                             <ul>
-                              {Object.keys(serviceList).map((category) => {
-                                // Check if the category matches the folderName
-                                if (category === folderName) {
-                                  return (
-                                    <li key={category}>
-                                      <ul>
-                                        {Object.keys(serviceList[category]).map((service) => {
-                                          // Filter out data according to JSON format
-                                          if (serviceList[category][service] !== "") {
+                                {
+                                    Object.keys(serviceList).map((category) => {
+                                        // Check if the category matches the folderName
+                                        if (category === folderName) {
                                             return (
-                                              <li key={service}>
-                                                <a href={serviceList[category][service]}>
-                                                  {service.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
-                                                  <i class="fas fa-angle-right"></i>
-                                                </a>
-                                              </li>
+                                                <li>
+                                                    <ul>
+                                                        {Object.keys(
+                                                            serviceList[
+                                                                category
+                                                            ],
+                                                        ).map((service) => {
+                                                            // Filter out data according to JSON format
+                                                            if (
+                                                                serviceList[
+                                                                    category
+                                                                ][service] !==
+                                                                ""
+                                                            ) {
+                                                                return (
+                                                                    <li>
+                                                                        <a
+                                                                            href={
+                                                                                serviceList[
+                                                                                    category
+                                                                                ][
+                                                                                    service
+                                                                                ]
+                                                                            }
+                                                                        >
+                                                                            {service
+                                                                                .replace(
+                                                                                    /([A-Z])/g,
+                                                                                    " $1",
+                                                                                )
+                                                                                .replace(
+                                                                                    /^./,
+                                                                                    (
+                                                                                        str,
+                                                                                    ) =>
+                                                                                        str.toUpperCase(),
+                                                                                )}
+                                                                            <i class="fas fa-angle-right" />
+                                                                        </a>
+                                                                    </li>
+                                                                );
+                                                            }
+                                                            return null;
+                                                        })}
+                                                    </ul>
+                                                </li>
                                             );
-                                          }
-                                          return null;
-                                        })}
-                                      </ul>
-                                    </li>
-                                  );
+                                        }
+                                        return null;
+                                    })
                                 }
-                                return null;
-                              })}
                             </ul>
-                          </div>
-                        
+                        </div>
+
                         <!-- End Single Widget -->
                         <div
                             class="single-widget quick-contact-widget text-light"
@@ -246,7 +226,8 @@ const folderName = segments[segments.length - 3];
                                 <h2>+(012) 6679545</h2>
                                 <h4>
                                     <a href="mailto:info@digital.com"
-                                        >info@technoservesolutions.com</a>
+                                        >info@technoservesolutions.com</a
+                                    >
                                 </h4>
                                 <a
                                     class="btn mt-30 circle btn-sm btn-gradient"
