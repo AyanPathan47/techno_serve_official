@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 
 const url = Astro.url.pathname;
 const segments = url.split('/'); // Split the URL by '/'
-const folderName = segments[segments.length - 2];;
+const folderName = segments[segments.length - 3];
 
 ---
 
@@ -30,8 +30,8 @@ const folderName = segments[segments.length - 2];;
                                         ><i class="fas fa-home"></i> Home</a>
                                 </li>
                                 <li>Service</li>
-                                <li class="active">{frontmatter.title}</li><li>{folderName
-                                }</li>
+                                <li>{folderName}</li>
+                                <li class="active">{frontmatter.title}</li>
                             </ol>
                         </nav>
                     </div>
