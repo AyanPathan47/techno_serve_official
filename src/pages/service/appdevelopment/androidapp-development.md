@@ -1,5 +1,5 @@
 ﻿---
-layout: ../../../layouts/ServiceLayout.astro
+layout: ../../../layouts/ServiceLayout2.astro
 title: "Android App Development"
 faqtitle1: "What is Android App UI/UX Design?"
 faqtext1: "Android App UI/UX Design involves creating user interfaces and experiences specifically tailored for Android applications. It encompasses designing intuitive and visually appealing interfaces that enhance user interaction and satisfaction on Android devices. UX design focuses on understanding user behavior and preferences to create seamless and enjoyable experiences, while UI design focuses on the visual aspects of the interface, including layout, typography, colors, and interactive elements."
