@@ -10,7 +10,7 @@ title: Laravel Developer – Internship
 
 -   As a Laravel Developer Intern at Techno Serve Software Solutions, you’ll play an integral role in our development team.
 -   This internship offers a unique chance to work on real projects, expand your skill set, and receive guidance from experienced developers.
--   You’ll be an essential part of the team, contributing to the creation of web applications that make a difference.
+-   You’ll be an essential part of the team, contributing to the creation of web applications that make a difference.<br><br>
 
 ### Responsibilities
 
@@ -19,7 +19,7 @@ title: Laravel Developer – Internship
 -   Write clean, efficient, and Maintainable code.
 -   Debug and troubleshoot issues to optimize application performance.
 -   Stay updated with Laravel and web development best practices.
--   Embrace a culture of continuous learning and growth.
+-   Embrace a culture of continuous learning and growth.<br><br>
 
 ### Qualifications
 
@@ -29,10 +29,10 @@ title: Laravel Developer – Internship
 -   Excellent problem-solving skills and attention to detail.
 -   Strong communication and teamwork abilities.
 -   Willingness to collaborate and learn in a fast-paced environment.
--   Pursuing or recently completed a degree in related field (preferred).
+-   Pursuing or recently completed a degree in related field (preferred).<br><br>
 
 **Job Category:** Developer
 
-**Job Type:** Full Time Part Time
+**Job Type:** Full Time/Part Time
 
 **Job Location:** Mumbai

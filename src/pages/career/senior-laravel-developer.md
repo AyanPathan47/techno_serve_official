@@ -35,6 +35,6 @@ Your work will directly impact our business goals, and you’ll have the opportu
 
 **Job Category:** Laravel Developer
 
-**Job Type:** Full Time Part Time
+**Job Type:** Full Time/Part Time
 
 **Job Location:** Mumbai

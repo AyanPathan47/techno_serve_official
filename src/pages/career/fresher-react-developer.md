@@ -4,7 +4,7 @@ title: Fresher React Developer
 ---
 
 
-### **Exciting React Developer Internship Opportunity!**
+### **Exciting React Developer Internship Opportunity!** 
 
 ### Position Overview
 
@@ -17,7 +17,7 @@ As a React Developer Intern at Techno Serve Software Solutions, you will be an i
 -   Write clean, efficient, and maintainable code.
 -   Debug and troubleshoot issues to optimize application performance.
 -   Stay up-to-date with React and web development best practices.
--   Embrace a culture of continuous learning and improvement.
+-   Embrace a culture of continuous learning and improvement.<br><br>
 
 ### Qualifications
 
@@ -26,10 +26,10 @@ As a React Developer Intern at Techno Serve Software Solutions, you will be an i
 -   Eagerness to learn and adapt to new technologies.
 -   Excellent problem-solving skills and attention to detail.
 -   Strong communication and teamwork abilities.
--   Enthusiasm for working in a collaborative and innovative environment.
+-   Enthusiasm for working in a collaborative and innovative environment.<br><br>
 
 **Job Category:** React Developer
 
-**Job Type:** Full Time Part Time
+**Job Type:** Full Time/Part Time
 
 **Job Location:** Mumbai

@@ -26,4 +26,10 @@ As a Digital Marketing Intern at Techno Serve Software Solutions, you’ll be an
 -   Creative thinking and problem-solving abilities.
 -   Strong attention to detail and the ability to multitask.
 -   Willingness to work collaboratively in a fast-paced environment.
--   Currently pursuing or recently completed a degree in related field (preferred).
+-   Currently pursuing or recently completed a degree in related field (preferred).<br><br>
+
+**Job Category:** Developer
+
+**Job Type:** Full Time/Part Time
+
+**Job Location:** Mumbai

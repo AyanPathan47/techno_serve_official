@@ -29,4 +29,10 @@ marketing strategies. You’ll have the opportunity to work with a talented team
 -   In-depth knowledge of SEO, SEM, email marketing, social media marketing, and content marketing.
 -   Strong analytical skills and the ability to use data to inform decisions.
 -   Excellent leadership and team management skills.
--   Exceptional communication and presentation abilities.
+-   Exceptional communication and presentation abilities.<br><br>
+
+**Job Category:** Developer
+
+**Job Type:** Full Time/Part Time
+
+**Job Location:** Mumbai

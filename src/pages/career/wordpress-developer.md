@@ -17,7 +17,7 @@ As a WordPress Developer at Techno Serve Software Solutions, you’ll play a piv
 -   Develop custom WordPress themes and templates from scratch.
 -   Troubleshoot and resolve website issues and bugs.
 -   Optimize websites for performance, speed, and security.
--   Stay up-to-date with WordPress trends, best practices, and new technologies.
+-   Stay up-to-date with WordPress trends, best practices, and new technologies.<br><br>
 
 ### Qualifications
 
@@ -27,10 +27,10 @@ As a WordPress Developer at Techno Serve Software Solutions, you’ll play a piv
 -   Knowledge of responsive web design principles.
 -   Familiarity with SEO best practices.
 -   Excellent problem-solving and communication skills.
--   Ability to work independently and in a team.
+-   Ability to work independently and in a team.<br><br>
 
 **Job Category:** Developer
 
-**Job Type:** Full Time Part Time
+**Job Type:** Full Time/Part Time
 
 **Job Location:** Mumbai
