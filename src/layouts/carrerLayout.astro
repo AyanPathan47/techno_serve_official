@@ -1,6 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 const { frontmatter } = Astro.props;
+if (Astro.request.method === "POST") {
+    try {
+        const data = await Astro.request.formData();
+        const name = data.get("username");
+        const email = data.get("email");
+        const password = data.get("password");
+        // Do something with the data
+    } catch (error) {
+        if (error instanceof Error) {
+            console.error(error.message);
+        }
+    }
+}
 ---
 
 <Layout title={frontmatter.title + "- Techno Serve Solution"}>
@@ -56,8 +69,8 @@ const { frontmatter } = Astro.props;
             <div class="col-tact-stye-one col-lg-11 mt-50">
                 <div class="contact-form-style-one">
                     <form
-                        action="assets/mail/contact.php"
                         method="POST"
+                        action="send_email.php"
                         class="contact-form contact-form"
                     >
                         <div class="row">
@@ -123,18 +136,16 @@ const { frontmatter } = Astro.props;
                                         placeholder="Upload CV/Resume *"
                                         type="file"
                                     />
-                                    <p class="fw-lighter">Allowed Type(s): .pdf, .doc, .docx</p>
+                                    <p class="fw-lighter">
+                                        Allowed Type(s): .pdf, .doc, .docx
+                                    </p>
                                     <span class="alert-error"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <button
-                                    type="submit"
-                                    name="submit"
-                                    id="submit"
-                                >
+                                <button type="submit" name="submit" id="submit">
                                     <i class="fa fa-paper-plane"></i>
                                     Submit
                                 </button>
@@ -145,17 +156,17 @@ const { frontmatter } = Astro.props;
                             <div id="message" class="alert-msg"></div>
                         </div>
                     </form>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <style>
-        @media (min-width: 992px) {
-            .desktop-margin {
-                margin-left: 3rem !important;
+
+        <style>
+            @media (min-width: 992px) {
+                .desktop-margin {
+                    margin-left: 3rem !important;
+                }
             }
-        }
-    </style>
-    
+        </style>
+    </section>
 </Layout>
