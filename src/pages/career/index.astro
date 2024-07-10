@@ -5,30 +5,43 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Jobs - Techno Serve Software Solutions">
     <!-- Start Breadcrumb 
     ============================================= -->
-        <div
-            class="breadcrumb-area bg-gray bg-cover"
-            style="background-image: url(assets/img/shape/banner-3.jpg);"
-        >
-            <div class="container">
-                <div class="breadcrumb-item pb-120">
-                    <div class="row hero-content">
-                        <div class="text-center">
-                        <h1 class="fs-1">CAREERS AT TECHNO SERVE</h1>
-                        <p class="fs-5">
-                            We are a company that offers great career
-                            opportunities with many benefits.
+    <div
+        class="breadcrumb-area bg-gray bg-cover"
+        style="background-image: url(assets/img/shape/banner-3.jpg);"
+    >
+        <div class="container">
+            <div class="breadcrumb-item pb-120">
+                <div class="row hero-content">
+                    <div class="text-center">
+                        <h1>
+                            CAREERS <span class="typing-text" id="typing-text"
+                            ></span>
+                        </h1>
+                        <p class="fs-4 mt-2 mx-auto w-50 d-none d-md-block">
+                            We are a company that offers great career opportunities with many benefits.
                         </p>
-                        </div>
+                        <p class="fs-4 mt-2 mx-auto d-block d-md-none">
+                            We are a company that offers great career opportunities with many benefits.
+                        </p>
+                        <button class="btn btn-primary mt-3"
+                            ><a href="#job-openings" class="text-white"
+                                >View Job Openings</a
+                            ></button
+                        >
+                    </div>
+                    <div class="typing-container">
+                        <p class="typing-effect"></p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <hr class="custom-hr">
     <!-- End Breadcrumb -->
-    
-    
+
     <!-- Start section -->
-    <div class="w-100 text-center d-none d-md-block">
-        <h3 class="fs-1">Bringing you to the best career experience</h3>
+    <div class="w-100 text-center d-none d-md-block sec-section">
+        <h3 class="fs-1"><b>Bringing you to the best career experience</b></h3>
         <p class="mx-auto w-75 fs-5">
             Join Techno Serve Solutions for an exceptional career experience. If
             you believe you would be a great addition to our team, we would love
@@ -38,11 +51,12 @@ import Layout from "../../layouts/Layout.astro";
             Send your CV to <a href="mailto:info@technoservesolutions.com"
                 ><span class="text-primary underline"
                     >@technoservesolutions.com*</span
-                ></a>
+                ></a
+            >
         </p>
     </div>
 
-    <div class="mx-2 d-block d-md-none">
+    <div class="mx-4 d-block d-md-none">
         <h3 class="fs-2">Bringing you to the best career experience</h3>
         <p>
             Join Techno Serve Solutions for an exceptional career experience. If
@@ -53,7 +67,8 @@ import Layout from "../../layouts/Layout.astro";
             Send your CV to <a href="mailto:info@technoservesolutions.com"
                 ><span class="text-primary underline"
                     >@technoservesolutions.com*</span
-                ></a>
+                ></a
+            >
         </p>
     </div>
     <!-- end section -->
@@ -61,8 +76,9 @@ import Layout from "../../layouts/Layout.astro";
     ============================================= -->
     <div
         class="team-style-three-area text-center default-padding bg-gray bottom-less"
+        id="job-openings"
     >
-    <h1 class="mb-5"><b>Job Openings</b></h1>
+        <h1 class="mb-5"><b>Job Openings</b></h1>
         <div class="container">
             <div class="row">
                 <!-- Single Item -->
@@ -198,8 +214,38 @@ import Layout from "../../layouts/Layout.astro";
     .underline:hover {
         text-decoration: underline;
     }
-    .hero-content{
-        margin-bottom: 200px;
-        margin-top: 100px;
+    .hero-content {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .hero-content h1 {
+        font-size: 62px;
+    }
+    .sec-section {
+        margin-top: 50px;
+    }
+    .typing-text {
+        display: inline-block;
+    }
+    .custom-hr {
+      height: 1px; /* Adjust the height as needed */
+      background-color: #000; /* Change the color if needed */
+      border: none; /* Remove the default border */
     }
 </style>
+
+<script>
+    const text = " AT TECHNO SERVE";
+    const typingTextElement = document.getElementById("typing-text");
+
+    let index = 0;
+    function type() {
+        if (index < text.length) {
+            typingTextElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 150); // Adjust typing speed here (higher value for slower typing)
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", type);
+</script>
