@@ -13,15 +13,17 @@ import Layout from "../../layouts/Layout.astro";
             <div class="breadcrumb-item pb-120">
                 <div class="row hero-content">
                     <div class="text-center">
-                        <h1>
+                        <h1 id="hero-heading">
                             CAREERS <span class="typing-text" id="typing-text"
                             ></span>
                         </h1>
                         <p class="fs-4 mt-2 mx-auto w-50 d-none d-md-block">
-                            We are a company that offers great career opportunities with many benefits.
+                            We are a company that offers great career
+                            opportunities with many benefits.
                         </p>
-                        <p class="fs-4 mt-2 mx-auto d-block d-md-none">
-                            We are a company that offers great career opportunities with many benefits.
+                        <p class="fs-5 mt-2 mx-auto d-block d-md-none">
+                            We are a company that offers great career
+                            opportunities with many benefits.
                         </p>
                         <button class="btn btn-primary mt-3"
                             ><a href="#job-openings" class="text-white"
@@ -36,7 +38,7 @@ import Layout from "../../layouts/Layout.astro";
             </div>
         </div>
     </div>
-    <hr class="custom-hr">
+    <hr class="custom-hr" />
     <!-- End Breadcrumb -->
 
     <!-- Start section -->
@@ -56,7 +58,7 @@ import Layout from "../../layouts/Layout.astro";
         </p>
     </div>
 
-    <div class="mx-4 d-block d-md-none">
+    <div class="mx-4 d-block d-md-none sec-section">
         <h3 class="fs-2">Bringing you to the best career experience</h3>
         <p>
             Join Techno Serve Solutions for an exceptional career experience. If
@@ -209,43 +211,103 @@ import Layout from "../../layouts/Layout.astro";
         </div>
     </div>
     <!-- End Team  -->
-</Layout>
-<style>
-    .underline:hover {
-        text-decoration: underline;
-    }
-    .hero-content {
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-    .hero-content h1 {
-        font-size: 62px;
-    }
-    .sec-section {
-        margin-top: 50px;
-    }
-    .typing-text {
-        display: inline-block;
-    }
-    .custom-hr {
-      height: 1px; /* Adjust the height as needed */
-      background-color: #000; /* Change the color if needed */
-      border: none; /* Remove the default border */
-    }
-</style>
 
-<script>
-    const text = " AT TECHNO SERVE";
-    const typingTextElement = document.getElementById("typing-text");
-
-    let index = 0;
-    function type() {
-        if (index < text.length) {
-            typingTextElement.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, 150); // Adjust typing speed here (higher value for slower typing)
+    <!-- Start Our Company Culture section -->
+    <div class="container sec-section">
+        <h1 class="text-center mb-4"><b>Our Company Culture & Values</b></h1>
+        <p class="text-center mx-auto w-75 fs-">
+            Our four core values—proactive, flexible, transparent, and
+            value-driven—are the foundation of our success. These principles
+            benefit both our team and our nonprofit clients, making us one of
+            the leading digital marketing agencies in the UK.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="fs-2 text-center">Transparency</h3>
+                <p>
+                    At Techno Serve Solutions, we value openness and honesty.
+                    Transparency and clear communication lead to greater success
+                    in Islamic Charity field. We keep our clients informed about
+                    their website improvement and provide constructive feedback
+                    to our team for continuous growth.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="fs-2 text-center">Proactiveness</h3>
+                <p>
+                    Our experts proactively assist your nonprofit in growing and
+                    reaching a wider audience to collect donations for those in
+                    need. We develop tailored strategies based on your charity's
+                    unique goals to enhance your website's visibility in the
+                    digital world.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="fs-2 text-center">Flexibility</h3>
+                <p>
+                    We offer flexible packages without long-term contracts,
+                    allowing clients to adjust their strategies as needed. Our
+                    team operates on a hybrid working model with core hours from
+                    9 AM to 6 PM UK time, and we are available 24/7 for urgent
+                    services.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="fs-2 text-center">Value-Driven</h3>
+                <p>
+                    We, as a leading digital marketing agency in the UK, are
+                    dedicated to delivering value for our Islamic charity
+                    clients. Our goal is to enhance the effectiveness of your
+                    nonprofit organization, boosting donations to support those
+                    in need.
+                </p>
+            </div>
+        </div>
+        <!-- End Our Company Culture section  -->
+    </div>
+    <style>
+        .underline:hover {
+            text-decoration: underline;
         }
-    }
+        .hero-content {
+            margin-top: 50px;
+            margin-bottom: 10vw;
+        }
+        @media screen and (max-width: 768px) {
+            #hero-heading {
+                font-size: 30px;
+            }
+        }
+        .hero-content h1 {
+            font-size: 62px;
+        }
+        .sec-section {
+            margin-top: 50px;
+        }
+        .typing-text {
+            display: inline-block;
+        }
+        .custom-hr {
+            height: 1px; /* Adjust the height as needed */
+            background-color: #000; /* Change the color if needed */
+            border: none; /* Remove the default border */
+            margin: 0 10vw 0 10vw; /* Adjust the margin as needed */
+        }
+    </style>
 
-    document.addEventListener("DOMContentLoaded", type);
-</script>
+    <script>
+        const text = " AT TECHNO SERVE";
+        const typingTextElement = document.getElementById("typing-text");
+
+        let index = 0;
+        function type() {
+            if (index < text.length) {
+                typingTextElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, 150); // Adjust typing speed here (higher value for slower typing)
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", type);
+    </script>
+</Layout>
