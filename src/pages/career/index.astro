@@ -42,7 +42,7 @@ import Layout from "../../layouts/Layout.astro";
     <!-- End Breadcrumb -->
 
     <!-- Start section -->
-    <div class="w-100 text-center d-none d-md-block sec-section">
+    <div class="w-100 text-center d-none d-md-block sec-section mb-5">
         <h3 class="fs-1"><b>Bringing you to the best career experience</b></h3>
         <p class="mx-auto w-75 fs-5">
             Join Techno Serve Solutions for an exceptional career experience. If
@@ -214,16 +214,26 @@ import Layout from "../../layouts/Layout.astro";
 
     <!-- Start Our Company Culture section -->
     <div class="container sec-section">
-        <h1 class="text-center mb-4"><b>Our Company Culture & Values</b></h1>
-        <p class="text-center mx-auto w-75 fs-">
+        <h1 class="text-center mb-4 custom-text" id="custom-text"><b>Our Company Culture & Values</b></h1>
+        <p class="text-center mx-auto w-75 d-none d-md-block">
             Our four core values—proactive, flexible, transparent, and
             value-driven—are the foundation of our success. These principles
             benefit both our team and our nonprofit clients, making us one of
-            the leading digital marketing agencies in the UK.
+            the leading <a href="/" id="home-link">digital marketing agencies in the UK.</a>
         </p>
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="fs-2 text-center">Transparency</h3>
+        <p class="text-center px-auto d-block d-md-none">
+            Our four core values—proactive, flexible, transparent, and
+            value-driven—are the foundation of our success. These principles
+            benefit both our team and our nonprofit clients, making us one of
+            the leading <a href="/" id="home-link">digital marketing agencies in the UK.</a>
+        </p>
+        <div class="row mb-5">
+            <div class="col-md-5 mx-auto mt-5 text-center">
+                <p>
+                    <img
+                    src="../assets/img/carrer/transparency.png"
+                    alt="Our Transparency"></p>
+                <h3 class="fs-2 custom-text"><b>Transparency</b></h3>
                 <p>
                     At Techno Serve Solutions, we value openness and honesty.
                     Transparency and clear communication lead to greater success
@@ -232,8 +242,12 @@ import Layout from "../../layouts/Layout.astro";
                     to our team for continuous growth.
                 </p>
             </div>
-            <div class="col-md-6">
-                <h3 class="fs-2 text-center">Proactiveness</h3>
+            <div class="col-md-5 mx-auto mt-5 text-center">
+                <p>
+                    <img
+                    src="../assets/img/carrer/proactiveness.png"
+                    alt="Proactiveness"></p>
+                <h3 class="fs-2 custom-text"><b>Proactiveness</b></h3>
                 <p>
                     Our experts proactively assist your nonprofit in growing and
                     reaching a wider audience to collect donations for those in
@@ -242,8 +256,12 @@ import Layout from "../../layouts/Layout.astro";
                     digital world.
                 </p>
             </div>
-            <div class="col-md-6">
-                <h3 class="fs-2 text-center">Flexibility</h3>
+            <div class="col-md-5 mx-auto mt-5 text-center">
+                <p>
+                    <img
+                    src="../assets/img/carrer/flexibility.png"
+                    alt="Flexibility"></p>
+                <h3 class="fs-2 custom-text"><b>Flexibility</b></h3>
                 <p>
                     We offer flexible packages without long-term contracts,
                     allowing clients to adjust their strategies as needed. Our
@@ -252,8 +270,12 @@ import Layout from "../../layouts/Layout.astro";
                     services.
                 </p>
             </div>
-            <div class="col-md-6">
-                <h3 class="fs-2 text-center">Value-Driven</h3>
+            <div class="col-md-5 mx-auto mt-5 text-center">
+                <p>
+                    <img
+                    src="../assets/img/carrer/value-driven.png"
+                    alt="Value-Driven"></p>
+                <h3 class="fs-2 custom-text"><b>Value-Driven</b></h3>
                 <p>
                     We, as a leading digital marketing agency in the UK, are
                     dedicated to delivering value for our Islamic charity
@@ -267,7 +289,7 @@ import Layout from "../../layouts/Layout.astro";
     </div>
     <style>
         .underline:hover {
-            
+
             text-decoration: underline;
         }
         .hero-content {
@@ -275,7 +297,7 @@ import Layout from "../../layouts/Layout.astro";
             margin-bottom: 10vw;
         }
         @media screen and (max-width: 768px) {
-            #hero-heading {
+            #hero-heading,#custom-text {
                 font-size: 30px;
             }
         }
@@ -288,11 +310,20 @@ import Layout from "../../layouts/Layout.astro";
         .typing-text {
             display: inline-block;
         }
+        .custom-text {
+            color: #5b2df3e8;
+        }
         .custom-hr {
             height: 1px; /* Adjust the height as needed */
             background-color: #000; /* Change the color if needed */
             border: none; /* Remove the default border */
             margin: 0 10vw 0 10vw; /* Adjust the margin as needed */
+        }
+        #home-link {
+            color: #5b2df3e8;
+        }
+        #home-link:hover {
+            color: black;
         }
     </style>
 
