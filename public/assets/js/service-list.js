@@ -15,7 +15,8 @@ const serviceList = {
     },
     "softwaredevelopment": {
       "Charity Management System": "/service/softwaredevelopment/charity-management-system",
-      "School Management System": "/service/softwaredevelopment/school-management-system"
+      "School Management System": "/service/softwaredevelopment/school-management-system",
+      "Logistics Management System": "/service/softwaredevelopment/logistics-management-system"
     },
     "support": {
       "Website Maintenance": "/service/support/website-maintenance",

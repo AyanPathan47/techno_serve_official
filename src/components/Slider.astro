@@ -1,0 +1,123 @@
+<div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img
+                src="/assets/img/service/our_client_Image/edhi.png"
+                alt=""
+            />
+            <div
+                class="container d-flex align-items-center swiper-content"
+            >
+                <p class="text-white fw-bold fs-2">
+                    Edhi Foundation
+                </p>
+                <p class="text-white ms-auto fs-5">Web Design</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img
+                src="/assets/img/service/our_client_Image/al-wahab.png"
+                alt=""
+            />
+            <div
+                class="container d-flex align-items-center swiper-content"
+            >
+                <p class="text-white fw-bold fs-2">
+                    AL-Wahab Foundation
+                </p>
+                <p class="text-white ms-auto fs-5">Web Design</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img
+                src="/assets/img/service/our_client_Image/crf.png"
+                alt=""
+            />
+            <div
+                class="container d-flex align-items-center swiper-content"
+            >
+                <p class="text-white fw-bold fs-2">
+                    Care And Relief Foundation
+                </p>
+                <p class="text-white ms-auto fs-5">Web Design</p>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img
+                src="/assets/img/service/our_client_Image/banbury.png"
+                alt=""
+            />
+            <div
+                class="container d-flex align-items-center swiper-content"
+            >
+                <p class="text-white fw-bold fs-2">
+                    Banbury Madni Masjid
+                </p>
+                <p class="text-white ms-auto fs-5">Web Design</p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<style>
+    .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 200px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 60%;
+        }
+        .swiper-slide:nth-child(2n) {
+            /* width: 60%; */
+        }
+
+        .swiper-slide:nth-child(3n) {
+            /* width: 40%; */
+        }
+        .slider-section {
+            height: 80vh;
+        }
+        .slider-section .swiper-content {
+            background-color: #282828;
+        }
+        .section-four-btn {
+            background-color: #8e66ff !important;
+        }
+</style>
+
+
+
+<script
+        is:inline
+        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <script is:inline>
+        var Swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>

@@ -33,7 +33,7 @@ if (Astro.request.method === "POST") {
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li>
-                                    <a href="#"
+                                    <a href="/"
                                         ><i class="fas fa-home"></i> Home</a
                                     >
                                 </li>
@@ -69,8 +69,8 @@ if (Astro.request.method === "POST") {
             <div class="col-tact-stye-one col-lg-11 mt-50">
                 <div class="contact-form-style-one">
                     <form
+                        action="https://api.web3forms.com/submit"
                         method="POST"
-                        action="sendEmail.php"
                         class="contact-form contact-form"
                         id="contactForm"
                     >
@@ -78,6 +78,11 @@ if (Astro.request.method === "POST") {
                             <div class="col-lg-12">
                                 <h3><b>Apply for this position</b></h3>
                                 <div class="form-group">
+                                    <input
+                                        type="hidden"
+                                        name="access_key"
+                                        value="51b4ac9f-c472-4427-9f46-d7d3e8f45d7b"
+                                    />
                                     <input
                                         class="form-control"
                                         id="name"
