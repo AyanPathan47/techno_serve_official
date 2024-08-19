@@ -1,0 +1,136 @@
+<>
+  <div class="h-[600px] w-full bg-[#fff] p-4">
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      pagination-clickable="true"
+      navigation="true"
+      space-between="30"
+      slides-per-view="3"
+      loop="true"
+      breakpoints='{"200": {"slidesPerView": 1, "spaceBetween": 20}, "768": {"slidesPerView": 2, "spaceBetween": 40}}'
+      autoplay='{"delay": 2000, "disableOnInteraction": false}'
+    >
+      <swiper-slide>
+        <div>
+          <img src="/assets/img/service/our_client_Image/edhi.png" alt="" />
+          <div class="row mt-4">
+            <div class="col-6 text-start">
+              <h3>Edhi Foundation</h3>
+            </div>
+            <div class="col-6 text-end">
+              <h5>Web Design</h5>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div>
+          <img src="/assets/img/service/our_client_Image/al-wahab.png" alt="" />
+          <div class="row mt-4">
+            <div class="col-6 text-start">
+              <h3>AL-Wahab Foundation</h3>
+            </div>
+            <div class="col-6 text-end">
+              <h5>Web Design</h5>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div>
+          <img src="/assets/img/service/our_client_Image/crf.png" alt="" />
+          <div class="row mt-4">
+            <div class="col-8 text-start">
+              <h3>Care & Relief Foundation</h3>
+            </div>
+            <div class="col-4 text-end">
+              <h5>Web Design</h5>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div>
+          <img src="/assets/img/service/our_client_Image/banbury.png" alt="" />
+          <div class="row mt-4">
+            <div class="col-6 text-start">
+              <h3>Banbury Madni Masjid</h3>
+            </div>
+            <div class="col-6 text-end">
+              <h5>Web Design</h5>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</>
+
+<style>
+  html,
+  body {
+    position: relative;
+    height: 350px;
+  }
+
+  body {
+    /* background: #eee; */
+    font-family:
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    swiper-slide img {
+      height: 220px;
+    }
+  }
+
+  .slider {
+    width: 100%;
+    height: 350px;
+  }
+  h3,
+  h5 {
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    h3,h5 {
+      font-size: 14px !important;
+    }
+  }
+
+</style>
+<script
+  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+></script>
