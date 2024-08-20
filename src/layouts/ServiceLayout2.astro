@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
 const url = Astro.url.pathname;
 const segments = url.split("/"); // Split the URL by '/'
 const folderName = segments[segments.length - 3];
-const teamCategory = folderName; // Set the category (e.g., webdevelopment)
+const teamCategory = "softwaredevelopment"; // Set the category (e.g., webdevelopment)
 const teamMembers = ourteamList[teamCategory];
 
 const getGridTemplateColumns = (length) => {
