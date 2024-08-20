@@ -7,8 +7,8 @@ import SliderNew from "../components/SliderNew.astro";
 const { frontmatter } = Astro.props;
 const url = Astro.url.pathname;
 const segments = url.split("/"); // Split the URL by '/'
-let folderName = segments[segments.length - 3];
-let teamCategory = "digitalmarketing"; // Set the category (e.g., webdevelopment)
+const folderName = segments[segments.length - 3];
+const teamCategory = folderName; // Set the category (e.g., webdevelopment)
 const teamMembers = ourteamList[teamCategory];
 
 const getGridTemplateColumns = (length) => {
