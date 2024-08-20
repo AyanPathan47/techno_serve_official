@@ -1,5 +1,5 @@
 ﻿---
-layout: ../../../layouts/ServiceLayout2.astro
+layout: ../../../layouts/ServiceLayout.astro
 title: "Responsive Web Design"
 faqtitle1: "Why is app maintenance important?"
 faqtext1: "App maintenance is crucial for ensuring that your mobile application remains functional, compatible with new hardware and software updates, secure from vulnerabilities, and aligned with evolving user preferences and usage patterns."

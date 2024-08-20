@@ -7,8 +7,9 @@ import SliderNew from "../components/SliderNew.astro";
 const { frontmatter } = Astro.props;
 const url = Astro.url.pathname;
 const segments = url.split("/"); // Split the URL by '/'
-const folderName = segments[segments.length - 3];
-const teamCategory = "softwaredevelopment"; // Set the category (e.g., webdevelopment)
+console.log(segments[segments.length - 2]);
+const folderName = segments[segments.length - 2];
+const teamCategory = folderName; // Set the category (e.g., webdevelopment)
 const teamMembers = ourteamList[teamCategory];
 
 const getGridTemplateColumns = (length) => {
@@ -588,10 +589,10 @@ const getGridTemplateColumns = (length) => {
         }
 
         .profile-item {
-            background-color: #000;
+            background-color: #fff;
             border-radius: 15px;
             overflow: hidden;
-            border: 1.5px solid black;
+            border: 2px solid black;
         }
 
         .profile-item img {

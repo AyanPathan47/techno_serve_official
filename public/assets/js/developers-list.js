@@ -1,5 +1,16 @@
 const ourteamList = {
-    "webdevelopment": [
+    "web-development": [
+        { "name": "anwar", "image": "anwar.png" },
+        { "name": "mubin", "image": "mubin.png" },
+        { "name": "sahil", "image": "sahil.png" },
+        { "name": "hussain", "image": "hussain.png" },
+        { "name": "samshad", "image": "samshad.png" },
+        { "name": "kaseem", "image": "kaseem.png" },
+        { "name": "danial", "image": "danial.png" },
+        { "name": "ayann", "image": "ayannn.png" },
+        { "name": "ahmed", "image": "ahmed.png" },
+    ],
+    "web-designing": [
         { "name": "anwar", "image": "anwar.png" },
         { "name": "mubin", "image": "mubin.png" },
         { "name": "sahil", "image": "sahil.png" },
@@ -10,21 +21,10 @@ const ourteamList = {
         { "name": "ayann", "image": "ayann.png" },
         { "name": "ahmed", "image": "ahmed.png" },
     ],
-    "webdesigning": [
-        { "name": "anwar", "image": "anwar.png" },
-        { "name": "mubin", "image": "mubin.png" },
-        { "name": "sahil", "image": "sahil.png" },
-        { "name": "hussain", "image": "hussain.png" },
-        { "name": "samshad", "image": "samshad.png" },
-        { "name": "kaseem", "image": "kaseem.png" },
-        { "name": "danial", "image": "danial.png" },
-        { "name": "ayann", "image": "ayann.png" },
-        { "name": "ahmed", "image": "ahmed.png" },
-    ],
-    "appdevelopment": [
+    "app-development": [
         { "name": "hasan", "image": "hasan.png" },
     ],
-    "softwaredevelopment": [
+    "software-development": [
         { "name": "anwar", "image": "anwar.png" },
         { "name": "mubin", "image": "mubin.png" },
         { "name": "sahil", "image": "sahil.png" },
@@ -41,7 +41,7 @@ const ourteamList = {
     "designing": [
         { "name": "moin", "image": "moin.png" },
     ],
-    "digitalmarketing": [
+    "digital-marketing": [
         {"name": "shehzad", "image": "shehzad.png"},
         {"name": "Qasim" , "image": "qasim.png"},
         {"name": "abrar" , "image": "abrar.png"},
