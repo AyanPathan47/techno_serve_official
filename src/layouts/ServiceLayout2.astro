@@ -1,13 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import serviceList from "../../public/assets/js/service-list";
 import ourteamList from "../../public/assets/js/developers-list";
-// import developersList from "../../public/assets/js/developers-list";
 import SliderNew from "../components/SliderNew.astro";
 const { frontmatter } = Astro.props;
 const url = Astro.url.pathname;
 const segments = url.split("/"); // Split the URL by '/'
-console.log(segments[segments.length - 2]);
 const folderName = segments[segments.length - 2];
 const teamCategory = folderName; // Set the category (e.g., webdevelopment)
 const teamMembers = ourteamList[teamCategory];
@@ -41,7 +38,7 @@ const getGridTemplateColumns = (length) => {
                                     >
                                 </li>
                                 <li><a href="/service">Service</a></li>
-                                <li>{folderName}</li>
+                                <!-- <li>{folderName}</li> -->
                                 <li class="active">{frontmatter.title}</li>
                             </ol>
                         </nav>
