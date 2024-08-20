@@ -1,5 +1,5 @@
 ﻿---
-layout: ../../../layouts/ServiceLayout.astro
+layout: ../../../layouts/ServiceLayout2.astro
 title: "Website Development Services"
 faqtitle1: "Why is website development crucial for businesses?"
 faqtext1: "Website development plays a crucial role in establishing and enhancing the online presence of businesses. It serves as a gateway for customers to interact with the brand, access information, and engage with products or services. A well-developed website not only showcases the brand's identity but also facilitates seamless user experiences, ultimately contributing to business growth and success."

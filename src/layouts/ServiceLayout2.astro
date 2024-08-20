@@ -1,12 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import serviceList from "../../public/assets/js/service-list";
+import ourteamList from "../../public/assets/js/developers-list";
+// import developersList from "../../public/assets/js/developers-list";
 import SliderNew from "../components/SliderNew.astro";
 const { frontmatter } = Astro.props;
-
 const url = Astro.url.pathname;
 const segments = url.split("/"); // Split the URL by '/'
-const folderName = segments[segments.length - 3];
+let folderName = segments[segments.length - 3];
+let teamCategory = "digitalmarketing"; // Set the category (e.g., webdevelopment)
+const teamMembers = ourteamList[teamCategory];
+
+const getGridTemplateColumns = (length) => {
+    if (length === 1) return "1fr";
+    if (length <= 4) return "repeat(2, 1fr)";
+    return "repeat(3, 1fr)";
+};
 ---
 
 <Layout title={frontmatter.title + "- Techno Serve Solution"}>
@@ -31,7 +40,7 @@ const folderName = segments[segments.length - 3];
                                     >
                                 </li>
                                 <li><a href="/service">Service</a></li>
-                                <!-- <li>{folderName}</li> -->
+                                <li>{folderName}</li>
                                 <li class="active">{frontmatter.title}</li>
                             </ol>
                         </nav>
@@ -220,63 +229,49 @@ const folderName = segments[segments.length - 3];
             </div>
         </div>
         <div class="col-12 col-md-5 mt-4 mt-md-0">
-            <div class="">
+            <!-- <div>
                 <div class="profile-grid">
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/anwar.png"
-                            alt="Profile 1"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/mubin.png"
-                            alt="Profile 2"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/sahil.png"
-                            alt="Profile 4"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/hussain.png"
-                            alt="Profile 5"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/samshad.png"
-                            alt="Profile 6"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/kaseem.png"
-                            alt="Profile 7"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/danial.png"
-                            alt="Profile 3"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/ayann.png"
-                            alt="Profile 8"
-                        />
-                    </div>
-                    <div class="profile-item">
-                        <img
-                            src="/assets/img/service/OurTeam/ahmed.png"
-                            alt="Profile 9"
-                        />
-                    </div>
+                    {
+                        ourteamList.developers.map((developer, index) => (
+                            <div class="profile-item">
+                                <img
+                                    src={'/assets/img/service/OurTeam/'+developer.image}
+                                    alt={developer.name}
+                                />
+                            </div>
+                        ))
+                    }
                 </div>
+            </div> -->
+            <!-- <div>
+                <div class="profile-grid-">
+                    {
+                        ourteamList.folderName.map((designer, index) => (
+                            <div class="profile-item">
+                                <img
+                                    src={'/assets/img/service/OurTeam/'+folderName.image}
+                                    alt={folderName.name}
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
+            </div> -->
+
+            <div
+                class="profile-grid"
+                style={`grid-template-columns: ${getGridTemplateColumns(teamMembers.length)};`}
+            >
+                {
+                    teamMembers.map((member) => (
+                        <div class="profile-item" key={member.name}>
+                            <img
+                                src={`/assets/img/service/OurTeam/${member.image}`}
+                                alt={`${member.name}'s Profile`}
+                            />
+                        </div>
+                    ))
+                }
             </div>
         </div>
     </div>
@@ -286,7 +281,7 @@ const folderName = segments[segments.length - 3];
     <!-- Section Six Faq Section Start -->
     <div class="section-six container">
         <div class="faq-style-one service-faq mt-40">
-            <h2 class="mb-30">Questions about service</h2>
+            <h2 class="mb-30 fw-bold"><b>FAQs</b></h2>
             <div class="accordion mt--20" id="faqAccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -586,22 +581,16 @@ const folderName = segments[segments.length - 3];
 
         .profile-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
             gap: 20px; /* Adjust the gap between items */
             padding: 20px; /* Optional, to add some padding around the grid */
             max-width: 900px; /* Adjust width as needed */
             margin: 0 auto; /* Center the grid horizontally */
         }
-        @media screen and (max-width: 600px) {
-            .profile-grid {
-                gap: 10px; /* Adjust the gap between items */
-            }
-        }
+
         .profile-item {
             background-color: #000;
             border-radius: 15px;
             overflow: hidden;
-            /* border: none; */
             border: 1.5px solid black;
         }
 
