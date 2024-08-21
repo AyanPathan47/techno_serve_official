@@ -6,8 +6,8 @@ const ourteamList = {
         { "name": "hussain", "image": "hussain.png" },
         { "name": "samshad", "image": "samshad.png" },
         { "name": "kaseem", "image": "kaseem.png" },
+        { "name": "ayann", "image": "ayannn.png" },
         { "name": "danial", "image": "danial.png" },
-        { "name": "ayann", "image": "ayann.png" },
         { "name": "ahmed", "image": "ahmed.png" },
     ],
     "web-designing": [
