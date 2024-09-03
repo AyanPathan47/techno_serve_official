@@ -9418,3 +9418,9 @@ footer .footer-bottom p {
 	background: url(../img/preloader.gif) center no-repeat #fff;
 	text-align: center;
 }
+
+/* Service Bullet-Points Font Size*/
+
+.list-group-font{
+	font-size: 18px;
+}
