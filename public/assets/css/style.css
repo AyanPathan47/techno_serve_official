@@ -1548,6 +1548,7 @@ p {
 	background: #E7EDF8;
 	position: relative;
 	z-index: 1;
+	font-family: var(--font-default);
 }
 
 .btn:focus, .btn.active {
