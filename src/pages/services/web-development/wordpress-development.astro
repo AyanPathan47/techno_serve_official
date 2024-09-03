@@ -1,22 +1,40 @@
----
-import Layout from "../layouts/Layout.astro";
-import ourteamList from "../../public/assets/js/developers-list";
-import SliderNew from "../components/SliderNew.astro";
-const { frontmatter } = Astro.props;
-const url = Astro.url.pathname;
-const segments = url.split("/"); // Split the URL by '/'
-const folderName = segments[segments.length - 2];
-const teamCategory = folderName; // Set the category (e.g., webdevelopment)
-const teamMembers = ourteamList[teamCategory];
-
-const getGridTemplateColumns = (length) => {
-    if (length === 1) return "1fr";
-    if (length <= 4) return "repeat(2, 1fr)";
-    return "repeat(3, 1fr)";
-};
+﻿---
+import Layout from "../../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+import ourteamList from "../../../../public/assets/js/developers-list";
+import SliderNew from "../../../components/SliderNew.astro";
 ---
 
-<Layout title={frontmatter.title + "- Techno Serve Solution"}>
+<SEO
+    title="WordPress Development - Techno Serve Solutions Agency 2024"
+    description="A heavily optimized description full of well-researched keywords."
+    openGraph={{
+        basic: {
+            title: "A Very Descriptive Title",
+            type: "A type.",
+            image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        },
+    }}
+    twitter={{
+        creator: "@jonasmerlins1",
+    }}
+    extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+            {
+                name: "twitter:image",
+                content:
+                    "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+            },
+            { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+            { name: "twitter:description", content: "Agent" },
+        ],
+    }}
+/>
+
+<Layout>
     <!-- Start Breadcrumb 
     ============================================= -->
     <div
@@ -38,8 +56,7 @@ const getGridTemplateColumns = (length) => {
                                     >
                                 </li>
                                 <li><a href="/services">Services</a></li>
-                                <!-- <li>{folderName}</li> -->
-                                <li class="active">{frontmatter.title}</li>
+                                <li class="active">WordPress Development</li>
                             </ol>
                         </nav>
                     </div>
@@ -56,15 +73,16 @@ const getGridTemplateColumns = (length) => {
         class="section-one container d-md-flex col-12 my-2 my-md-3 align-items-center"
     >
         <div class="col-12 col-md-6">
-            <p class="fw-bold text-black display-4">
-                Website Development Services
-            </p>
+            <h1 class="fw-bold text-black display-4">
+                WordPress Development Services
+            </h1>
         </div>
         <div class="col-12 col-md-6 px-md-5 mx-md-5">
             <p class="text-black our-font mb-md-4 pe-2 px-md-0 mx-md-0">
-                Let's understand how we develop the websites, maintain, design,
-                codes, and manage to meet business needs and engage the traffic.
-                We've also showcased our development work further down the page.
+                Build your online presence and take your charity to the level it
+                deserves with our WordPress development services. We create
+                high-performing, easy-to-manage WordPress websites that align
+                with your business goals.
             </p>
         </div>
     </div>
@@ -83,13 +101,13 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Two Start -->
     <div class="section-two container d-md-flex align-items-center col-12 my-5">
         <div class="col-12 col-md-7 pe-2 me-2 pe-md-5 me-md-5">
-            <p class="fw-bold text-black display-6">Why Choose Us</p>
+            <h2 class="fw-bold text-black display-6">Why Choose Us</h2>
             <p class="text-black mb-md-4 pe-2 px-md-0 mx-md-0 our-font">
-                At Techno Serve Software Solutions, we create user-friendly
-                websites that reflect your brand identity, deliver results
-                quickly, and stay within budget. Our small teams offer
-                personalized attention, competitive pricing, and advanced SEO to
-                enhance your site's visibility.
+                At Techno Serve Software Solutions, we are experts in creating
+                user-friendly websites as your brand digital identity, deliver
+                results quickly, and stay within budget. Our experts team offer
+                personalised attention, competitive pricing, and Technical SEO
+                to enhance your site's visibility.
             </p>
             <div class="d-md-flex mb-4 text-start">
                 <div class="col-12 col-md-7 px-md-0 px-2">
@@ -97,21 +115,20 @@ const getGridTemplateColumns = (length) => {
                         <li>
                             <i class="fas fa-check list-group-content"></i>
                             <span class="fw-bold"
-                                >&nbsp;Database Application and System
-                                Integration</span
+                                >&nbsp;&nbsp;Web Services & Web Hosting</span
                             >
                         </li>
                         <li>
                             <i class="fas fa-check list-group-content"></i><span
                                 class="fw-bold"
                             >
-                                &nbsp;&nbsp;Lead Capturing and Custom Forms</span
+                                &nbsp;&nbsp;WordPress Management</span
                             >
                         </li>
                         <li>
                             <i class="fas fa-check list-group-content"></i>
                             <span class="fw-bold"
-                                >&nbsp;&nbsp;Mobile and Responsive Development</span
+                                >&nbsp;&nbsp;Make Your Website Mobile Friendly</span
                             >
                         </li>
                     </ul>
@@ -122,20 +139,22 @@ const getGridTemplateColumns = (length) => {
                             <i class="fas fa-check list-group-content"></i><span
                                 class="fw-bold"
                             >
-                                &nbsp;&nbsp;Advanced Languages and Frameworks</span
-                            >
-                        </li>
-                        <li>
-                            <i class="fas fa-check list-group-content"></i><span
-                                class="fw-bold"
-                                >&nbsp;&nbsp;UX consulting
+                                &nbsp;WordPress Web Design creation
                             </span>
                         </li>
                         <li>
                             <i class="fas fa-check list-group-content"></i><span
                                 class="fw-bold"
-                                >&nbsp;&nbsp;Marketing strategy</span
-                            >
+                                >&nbsp;&nbsp;WordPress Themes & Plugins
+                                customisation
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check list-group-content"></i><span
+                                class="fw-bold"
+                                >&nbsp;&nbsp;WordPress Security and WordPress
+                                maintenance
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -156,13 +175,13 @@ const getGridTemplateColumns = (length) => {
     <div class="section-three">
         <div class="row container h-auto py-2 py-md-5">
             <div class="container content col-12 col-md-9 mx-md-5 mt-3 mt-md-0">
-                <p class="slider-heading our-heading fw-bold">
-                    Explore our work projects
-                </p>
+                <h2 class="slider-heading our-heading fw-bold">
+                    Explore Our Charities Designs
+                </h2>
                 <p class="text-white our-font">
-                    Discover our impactful projects, from website development to
-                    marketing, supporting Islamic charities for lasting change.
-                    See highlights below.
+                    Check out our clients' WordPress websites to see how our
+                    expert team creates well-designed, affordable WordPress
+                    sites for charities. Some of the projects displayed here.
                 </p>
             </div>
 
@@ -187,21 +206,28 @@ const getGridTemplateColumns = (length) => {
             />
         </div>
         <div class="col-12 col-md-8 px-md-5 mx-md-5 px-2 mt-4 mt-md-0">
-            <p class="fw-bold text-black display-6">
-                Mobile-First Optimized Websites
-            </p>
+            <h2 class="fw-bold text-black display-6">
+                Benefits to Create WP Sites With Us
+            </h2>
             <p class="text-black our-font">
-                90% of the traffic comes from Mobile across the globe and Google
-                is keen to focus on mobile-first indexing, it's crucial for your
-                website to be mobile-responsive. Our web design service ensures
-                to have mobile-first optimized websites for our clients.<br
-                /><br /> We make sure the users have a consistent experience across
-                all devices. As a web design agency, we focus on how designs appear
-                and how easy they are to navigate on various devices.
+                WordPress websites provide charities with a strong platform to
+                expand their reach and easily manage their online presence. Its
+                user-friendly interface allows any team member to update
+                content, share stories, and post events without needing
+                technical skills.
+                <br /><br />Additionally, we offer cost-effective solutions with
+                customizable themes and plugins that exactly match your needs
+                and keep it appealing enough for the donors to donate your
+                islamic charity in the UK. We work on designs to enable These
+                features to help build trust, encourage donations, and
+                strengthen community support.
             </p>
             <div class="d-flex justify-content-center justify-content-md-start">
                 <button class="btn section-four-btn mt-4 mx-md-0"
-                    >Random Page<i class="fas fa-arrow-right"></i></button
+                    ><a
+                        href="https://technoservesolutions.com/services/web-development/website-development/"
+                        class="text-white">Website Development</a
+                    ><i class="fas fa-arrow-right"></i></button
                 >
             </div>
         </div>
@@ -211,65 +237,80 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Five Start -->
     <div class="section-two container d-md-flex align-items-center col-12">
         <div class="col-12 col-md-7 me-md-5 pe-md-5">
-            <p class="fw-bold text-black display-6">
-                We are more than just your web design team
-            </p>
+            <h2 class="fw-bold text-black display-6">
+                Our WordPress Development Team
+            </h2>
             <p class="text-black mb-2 pe-2 me-md-5 pe-md-5 mb-md-4 our-font">
-                We're here to elevate your business with our web development
-                expertise. Our team conducts an in-depth analysis of your
-                business and create designs that are both simple and visually
-                appealing, which helps your business to grow.
+                We’re here to grow your business across the globe with our
+                WordPress development expertise. Our Experts have more than 10
+                years of experience in this which ultimately helps the business
+                to take them to the next level.
             </p>
             <div class="d-flex justify-content-center justify-content-md-start">
                 <button class="btn section-four-btn mt-4 mx-md-0"
-                    >Random Page<i class="fas fa-arrow-right"></i></button
+                    ><a
+                        href="https://technoservesolutions.com/contact/"
+                        class="text-white">Contact Us</a
+                    ><i class="fas fa-arrow-right"></i></button
                 >
             </div>
         </div>
         <div class="col-12 col-md-5 mt-4 mt-md-0">
-            <!-- <div>
-                <div class="profile-grid">
-                    {
-                        ourteamList.developers.map((developer, index) => (
-                            <div class="profile-item">
-                                <img
-                                    src={'/assets/img/service/OurTeam/'+developer.image}
-                                    alt={developer.name}
-                                />
-                            </div>
-                        ))
-                    }
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/anwar.png"
+                        alt="anwar"
+                    />
                 </div>
-            </div> -->
-            <!-- <div>
-                <div class="profile-grid-">
-                    {
-                        ourteamList.folderName.map((designer, index) => (
-                            <div class="profile-item">
-                                <img
-                                    src={'/assets/img/service/OurTeam/'+folderName.image}
-                                    alt={folderName.name}
-                                />
-                            </div>
-                        ))
-                    }
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/mubin.png"
+                        alt="mubin"
+                    />
                 </div>
-            </div> -->
-
-            <div
-                class="profile-grid"
-                style={`grid-template-columns: ${getGridTemplateColumns(teamMembers.length)};`}
-            >
-                {
-                    teamMembers.map((member) => (
-                        <div class="profile-item" key={member.name}>
-                            <img
-                                src={`/assets/img/service/OurTeam/${member.image}`}
-                                alt={`${member.name}'s Profile`}
-                            />
-                        </div>
-                    ))
-                }
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/sahil.png"
+                        alt="sahil"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/hussain.png"
+                        alt="hussain"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/samshad.png"
+                        alt="samshad"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/kaseem.png"
+                        alt="kaseem"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/ayann.png"
+                        alt="ayann"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/danial.png"
+                        alt="danial"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/ahmed.png"
+                        alt="ahmed"
+                    />
+                </div>
             </div>
         </div>
     </div>
@@ -279,10 +320,10 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Six Faq Section Start -->
     <div class="section-six container">
         <div class="faq-style-one service-faq mt-40">
-            <h2 class="mb-30 fw-bold"><b>FAQs</b></h2>
+            <h2 class="mb-30 fw-bold"><b>Frequently Asked Questions</b></h2>
             <div class="accordion mt--20" id="faqAccordion">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                    <h3 class="accordion-header" id="headingOne">
                         <button
                             class="accordion-button"
                             type="button"
@@ -291,9 +332,10 @@ const getGridTemplateColumns = (length) => {
                             aria-expanded="true"
                             aria-controls="collapseOne"
                         >
-                            {frontmatter.faqtitle1}
+                            Why is WordPress development important for my
+                            charity?
                         </button>
-                    </h2>
+                    </h3>
                     <div
                         id="collapseOne"
                         class="accordion-collapse collapse show"
@@ -302,13 +344,21 @@ const getGridTemplateColumns = (length) => {
                     >
                         <div class="accordion-body">
                             <p class="our-font">
-                                {frontmatter.faqtext1}
+                                WordPress development is crucial for creating a
+                                robust and flexible website that can adapt to
+                                your specific needs at the most affordable cost.
+                                As the leading Content Management System (CMS)
+                                powering over 45% of websites, we create a
+                                user-friendly interface and extensive
+                                customization options, making it an ideal choice
+                                for building websites of all sizes and purposes
+                                for your islamic charity.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
+                    <h3 class="accordion-header" id="headingTwo">
                         <button
                             class="accordion-button collapsed"
                             type="button"
@@ -317,9 +367,9 @@ const getGridTemplateColumns = (length) => {
                             aria-expanded="false"
                             aria-controls="collapseTwo"
                         >
-                            {frontmatter.faqtitle2}
+                            What will be my website's pricing?
                         </button>
-                    </h2>
+                    </h3>
                     <div
                         id="collapseTwo"
                         class="accordion-collapse collapse"
@@ -328,13 +378,17 @@ const getGridTemplateColumns = (length) => {
                     >
                         <div class="accordion-body">
                             <p class="our-font">
-                                {frontmatter.faqtext2}
+                                Pricing is different for each charity based on
+                                their specific needs. To get a quote, please
+                                consult with our experts to discuss your
+                                requirements, and we will provide you with an
+                                accurate quotation.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item mb-5">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h3 class="accordion-header" id="headingThree">
                         <button
                             class="accordion-button collapsed"
                             type="button"
@@ -343,9 +397,10 @@ const getGridTemplateColumns = (length) => {
                             aria-expanded="false"
                             aria-controls="collapseThree"
                         >
-                            {frontmatter.faqtitle3}
+                            How can I leverage WordPress development for my
+                            website?
                         </button>
-                    </h2>
+                    </h3>
                     <div
                         id="collapseThree"
                         class="accordion-collapse collapse"
@@ -354,7 +409,16 @@ const getGridTemplateColumns = (length) => {
                     >
                         <div class="accordion-body">
                             <p class="our-font">
-                                {frontmatter.faqtext3}
+                                To leverage WordPress development effectively,
+                                consider working with our experienced
+                                professionals who can tailor the platform to
+                                your specific requirements. Whether you need a
+                                simple blog or an appealing wp website, we
+                                create a flexible and scalability to accommodate
+                                your needs. By investing in WordPress
+                                development, you can create a website that
+                                stands out and delivers an exceptional user
+                                experience in the charity sector.
                             </p>
                         </div>
                     </div>
@@ -371,9 +435,9 @@ const getGridTemplateColumns = (length) => {
             class="section-seven h-100 rounded-3 d-md-flex align-items-center p-5 mb-5"
         >
             <div class="content col-12 col-md-6">
-                <h1 class="text-white display-6 fw-bold">
+                <h2 class="text-white display-6 fw-bold">
                     Tell us about your project
-                </h1>
+                </h2>
                 <p class="text-white">
                     To find out more about our services and how we can <br /> help
                     your business, please get in touch.
@@ -395,9 +459,9 @@ const getGridTemplateColumns = (length) => {
     <!-- for mobile  -->
     <div class="container section-seven-mobile d-md-none">
         <div class="content">
-            <h1 class="text-white display-6 fw-bold">
+            <h2 class="text-white display-6 fw-bold">
                 Tell us about your project
-            </h1>
+            </h2>
             <p class="text-white">
                 To find out more about our services and how we can help your
                 business, please get in touch.
@@ -416,6 +480,7 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Seven End -->
 
     <!-- End Services Details Area -->
+
     <style>
         .breadcrumb-area {
             /* margin-top: -50px; */
@@ -579,24 +644,24 @@ const getGridTemplateColumns = (length) => {
 
         .profile-grid {
             display: grid;
-            gap: 20px; /* Adjust the gap between items */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; /* Adjust the gap between items */
             padding: 20px; /* Optional, to add some padding around the grid */
             max-width: 900px; /* Adjust width as needed */
             margin: 0 auto; /* Center the grid horizontally */
         }
 
         .profile-item {
-            background-color: #fff;
+            background-color: #000;
             border-radius: 15px;
             overflow: hidden;
-            border: 2px solid black;
+            border: 2px solid #000; /* To match the rounded corners and frame */
         }
 
         .profile-item img {
             display: block;
             width: 100%;
             height: auto;
-            object-fit: cover;
         }
     </style>
 

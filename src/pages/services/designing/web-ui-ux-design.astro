@@ -1,0 +1,346 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+// import serviceList from "../../public/assets/js/service-list";
+// const { frontmatter } = Astro.props;
+
+// const url = Astro.url.pathname;
+// const segments = url.split("/"); // Split the URL by '/'
+// const folderName = segments[segments.length - 3];
+import { SEO } from "astro-seo";
+
+---
+<SEO
+      title="Responsive Web Design - Techno Serve Solutions Agency 2024"
+      description="A heavily optimized description full of well-researched keywords."
+      openGraph={{
+        basic: {
+          title: "A Very Descriptive Title",
+          type: "A type.",
+          image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        }
+      }}
+      twitter={{
+        creator: "@jonasmerlins1"
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+          },
+          { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+
+<Layout>
+  <!-- Start Breadcrumb 
+    ============================================= -->
+  <div
+    class="breadcrumb-area bg-gray bg-cover"
+    style="background-image: url(/assets/img/shape/banner-3.jpg);"
+  >
+    <div class="container">
+      <div class="breadcrumb-item">
+        <div class="breadcrum-shape">
+          <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li>
+                  <a href="/"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li><a href="/services">Services</a></li>
+                <!-- <li>{folderName}</li> -->
+                <li class="active">Responsive Web Design</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+
+  <!-- Star Services Details Area
+    ============================================= -->
+  <div class="services-details-area default-padding">
+    <div class="container">
+      <div class="services-details-items">
+        <div class="row">
+          <div
+            class="col-xl-8 col-lg-7 pr-45 pr-md-15 pr-xs-15 services-single-content"
+          >
+            <h1>Responsive Web Design</h1>
+            <img
+              src="/assets/img/service/website-UI-UX-design.png"
+              alt="Android App Development"
+              style="width: 500px"
+            />
+            <div class="service-single-thumb"></div>
+            <h3 id="what-is-responsive-web-design-" style="padding-top: 20px;">
+              What is Responsive Web Design?
+            </h3>
+            <p>
+              Responsive Web Design is the use of HTML and CSS to automatically
+              resize, hide, shrink, or enlarge a website to make it look good on
+              all devices (desktops, tablets, and phones).
+            </p>
+            <h3 id="how-does-responsive-web-design-work-">
+              How does responsive web design work?
+            </h3>
+            <p>
+              Cascading Style Sheets (CSS) are used in responsive web design to
+              serve different style properties based on the screen size,
+              orientation, resolution, colour capability, and other
+              characteristics of the user’s device. Viewport and media queries
+              are two examples of CSS properties related to responsive web
+              design.
+            </p>
+            <h3
+              id="why-responsive-web-design-matters-to-web-designers-and-business-owners-"
+            >
+              Why responsive web design matters to web designers and business
+              owners?
+            </h3>
+            <p>
+              Responsive web design allows web designers, user interface
+              designers, and web developers from working around the clock to
+              create websites for every device on the market.
+            </p>
+            <p>Among the advantages are the following:</p>
+            <p>
+              <strong>Every device has its own site:</strong> The website will be
+              configured for the user’s optimal viewing pleasure, whether viewed
+              on a 27-inch iMac with a wireless connection or from the screen of
+              your Android phone.<br /><strong
+                >The device’s optimal design is:</strong
+              > All images, fonts, and other HTML elements will be scaled to fit
+              the user’s screen size when using the responsive web design approach.<br
+              /><strong>Redirections are not required:</strong> Other approaches
+              to designing for multiple devices necessitate the use of redirects
+              to direct users to the correct version of a web page. The user can
+              access the content he wants to look at as quickly as possible because
+              there are no redirects.<br />From a financial standpoint,
+              responsive web design is also advantageous. It’s also easier to
+              manage because you only have to manage one site rather than two.
+              Changes do not need to be made twice. Instead, you can update a
+              single website from which you can work.
+            </p>
+
+            <div class="faq-style-one service-faq mt-40">
+              <h2 class="mb-30">Questions about service</h2>
+              <div class="accordion mt--20" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Why is app maintenance important?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        App maintenance is crucial for ensuring that your mobile
+                        application remains functional, compatible with new
+                        hardware and software updates, secure from
+                        vulnerabilities, and aligned with evolving user
+                        preferences and usage patterns.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      What factors contribute to the costs of app maintenance?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        The costs of app maintenance can vary depending on
+                        factors such as the complexity of the app, frequency of
+                        updates, need for security patches, and infrastructure
+                        changes. Ignoring app maintenance can lead to higher
+                        costs in the long run due to issues like security
+                        vulnerabilities and user dissatisfaction.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      How can I monitor and engage users after launching an app?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        After launching an app, it's essential to monitor its
+                        performance through analytics to understand user
+                        behavior, preferences, and engagement metrics. This data
+                        can help in making informed decisions for app updates,
+                        feature enhancements, and user experience improvements
+                        to drive user engagement and retention.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar"
+          >
+            <div class="single-widget services-list-widget">
+              <h4 class="widget-title">Services</h4>
+              <!-- <ul>
+                                {
+                                    Object.keys(serviceList).map((category) => {
+                                        // Check if the category matches the folderName
+                                        if (category === folderName) {
+                                            return (
+                                                <li>
+                                                    <ul>
+                                                        {Object.keys(
+                                                            serviceList[
+                                                                category
+                                                            ],
+                                                        ).map((service) => {
+                                                            // Filter out data according to JSON format
+                                                            if (
+                                                                serviceList[
+                                                                    category
+                                                                ][service] !==
+                                                                ""
+                                                            ) {
+                                                                return (
+                                                                    <li>
+                                                                        <a
+                                                                            href={
+                                                                                serviceList[
+                                                                                    category
+                                                                                ][
+                                                                                    service
+                                                                                ]
+                                                                            }
+                                                                        >
+                                                                            {service
+                                                                                .replace(
+                                                                                    /([A-Z])/g,
+                                                                                    " $1",
+                                                                                )
+                                                                                .replace(
+                                                                                    /^./,
+                                                                                    (
+                                                                                        str,
+                                                                                    ) =>
+                                                                                        str.toUpperCase(),
+                                                                                )}
+                                                                            <i class="fas fa-angle-right" />
+                                                                        </a>
+                                                                    </li>
+                                                                );
+                                                            }
+                                                            return null;
+                                                        })}
+                                                    </ul>
+                                                </li>
+                                            );
+                                        }
+                                        return null;
+                                    })
+                                }
+                            </ul> -->
+            </div>
+
+            <!-- End Single Widget -->
+            <div
+              class="single-widget quick-contact-widget text-light"
+              style="background-image: url(/assets/img/contact.png);"
+            >
+              <div class="content">
+                <h3>Need Help?</h3>
+                <p>
+                  Speak with a human to filling out a form? call corporate
+                  office and we will connect.
+                </p>
+                <h2>+(44)7429 466754</h2>
+                <h4>
+                  <a href="mailto:info@digital.com"
+                    >info@technoservesolutions.com</a
+                  >
+                </h4>
+                <a class="btn mt-30 circle btn-sm btn-gradient" href="/contact"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <!-- Single Widget -->
+            <div class="single-widget widget-brochure">
+              <h4 class="widget-title">Brochure</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-file-pdf"></i> Download Brochure
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-file-pdf"></i> Company Details
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Single Widget -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services Details Area -->
+</Layout>

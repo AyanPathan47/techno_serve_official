@@ -1,0 +1,230 @@
+---
+import Layout from "../../layouts/Layout.astro";
+if (Astro.request.method === "POST") {
+    try {
+        const data = await Astro.request.formData();
+        const name = data.get("username");
+        const email = data.get("email");
+        const password = data.get("password");
+        // Do something with the data
+    } catch (error) {
+        if (error instanceof Error) {
+            console.error(error.message);
+        }
+    }
+}
+import { SEO } from "astro-seo";
+
+---
+<SEO
+      title="Senior Digital Marketing Executive - Techno Serve Solutions"
+      description="A heavily optimized description full of well-researched keywords."
+      openGraph={{
+        basic: {
+          title: "A Very Descriptive Title",
+          type: "A type.",
+          image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        }
+      }}
+      twitter={{
+        creator: "@jonasmerlins1"
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+          },
+          { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+<Layout>
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div
+        class="breadcrumb-area bg-gray bg-cover"
+        style="background-image: url(/assets/img/shape/banner-3.jpg);"
+    >
+        <div class="container">
+            <div class="breadcrumb-item">
+                <div class="breadcrum-shape">
+                    <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/"
+                                        ><i class="fas fa-home"></i> Home</a
+                                    >
+                                </li>
+                                <li><a href="/career">Career</a></li>
+                                <li class="active">Senior Digital Marketing Executive</li>
+                            </ol>
+                        </nav>
+                        <h1>Senior Digital Marketing Executive</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <section class="row">
+        <div class="col-md-7 col-12">
+            <!-- Star Project Details Area
+            ============================================= -->
+            <div class="project-details-area default-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="project-top-info desktop-margin">
+                                <h3 id="-join-our-team-as-a-senior-digital-marketing-executive-"><strong>Join Our Team as a Senior Digital Marketing Executive!</strong></h3>
+                                <h3 id="position-overview">Position Overview</h3>
+                                <p>As a Senior Digital Marketing Executive at Techno Serve Software Solutions,</p>
+                                <p>you will be responsible for developing and executing comprehensive digital</p>
+                                <p>marketing strategies. You’ll have the opportunity to work with a talented team,leverage the latest digital tools and technologies, and make a significant impact on our online presence and brand visibility.</p>
+                                <h3 id="responsibilities">Responsibilities</h3>
+                                <ul>
+                                <li>Design and implement digital marketing campaigns across various channels, including SEO, SEM, social media, email marketing, and content marketing.</li>
+                                <li>Analyze campaign performance, track KPIs, and provide data-driven insights to optimize strategies.</li>
+                                <li>Lead and mentor a team of digital marketing professionals.</li>
+                                <li>Collaborate with cross-functional teams to align marketing efforts with business goals.</li>
+                                <li>Stay updated with industry trends, emerging technologies, and best practices.</li>
+                                <li>Develop and manage marketing budgets and allocate resources effectively.<br><br></li>
+                                </ul>
+                                <h3 id="qualifications">Qualifications</h3>
+                                <ul>
+                                <li>3+ years of experience in digital marketing, with a strong focus on strategy and execution.</li>
+                                <li>Proven track record of driving successful digital marketing campaigns and achieving measurable results.</li>
+                                <li>In-depth knowledge of SEO, SEM, email marketing, social media marketing, and content marketing.</li>
+                                <li>Strong analytical skills and the ability to use data to inform decisions.</li>
+                                <li>Excellent leadership and team management skills.</li>
+                                <li>Exceptional communication and presentation abilities.<br><br></li>
+                                </ul>
+                                <p><strong>Job Category:</strong> Developer</p>
+                                <p><strong>Job Type:</strong> Full Time/Part Time</p>
+                                <p><strong>Job Location:</strong> Mumbai</p>
+                                
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-12">
+            <div class="col-tact-stye-one col-lg-11 mt-50">
+                <div class="contact-form-style-one">
+                    <form
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                        class="contact-form contact-form"
+                        id="contactForm"
+                    >
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3><b>Apply for this position</b></h3>
+                                <div class="form-group">
+                                    <input
+                                        type="hidden"
+                                        name="access_key"
+                                        value="51b4ac9f-c472-4427-9f46-d7d3e8f45d7b"
+                                    />
+                                    <input
+                                        class="form-control"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Full Name"
+                                        type="text"
+                                    />
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email*"
+                                        type="email"
+                                    />
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input
+                                        class="form-control"
+                                        id="phone"
+                                        name="phone"
+                                        placeholder="Phone"
+                                        type="text"
+                                    />
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group comments">
+                                    <textarea
+                                        class="form-control"
+                                        id="comments"
+                                        name="comments"
+                                        placeholder="Tell Us About Yourself *"
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input
+                                        class="form-control"
+                                        id="resume"
+                                        name="resume"
+                                        placeholder="Upload CV/Resume *"
+                                        type="file"
+                                    />
+                                    <p class="fw-lighter">
+                                        Allowed Type(s): .pdf, .doc, .docx
+                                    </p>
+                                    <span class="alert-error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="submit" name="submit" id="submit">
+                                    <i class="fa fa-paper-plane"></i>
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Alert Message -->
+                        <div class="col-lg-12 alert-notification">
+                            <div id="message" class="alert-msg"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @media (min-width: 992px) {
+                .desktop-margin {
+                    margin-left: 3rem !important;
+                }
+            }
+        </style>
+    </section>
+</Layout>

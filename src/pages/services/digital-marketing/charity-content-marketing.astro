@@ -1,0 +1,338 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+// import serviceList from "../../public/assets/js/service-list";
+// const { frontmatter } = Astro.props;
+
+// const url = Astro.url.pathname;
+// const segments = url.split("/"); // Split the URL by '/'
+// const folderName = segments[segments.length - 3];
+import { SEO } from "astro-seo";
+
+---
+<SEO
+      title="Content Marketing - Techno Serve Solutions Agency 2024"
+      description="A heavily optimized description full of well-researched keywords."
+      openGraph={{
+        basic: {
+          title: "A Very Descriptive Title",
+          type: "A type.",
+          image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        }
+      }}
+      twitter={{
+        creator: "@jonasmerlins1"
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+          },
+          { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
+<Layout>
+  <!-- Start Breadcrumb 
+    ============================================= -->
+  <div
+    class="breadcrumb-area bg-gray bg-cover"
+    style="background-image: url(/assets/img/shape/banner-3.jpg);"
+  >
+    <div class="container">
+      <div class="breadcrumb-item">
+        <div class="breadcrum-shape">
+          <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li>
+                  <a href="/"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li><a href="/services">Services</a></li>
+                <!-- <li>{folderName}</li> -->
+                <li class="active">Content Marketing</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+
+  <!-- Star Services Details Area
+    ============================================= -->
+  <div class="services-details-area default-padding">
+    <div class="container">
+      <div class="services-details-items">
+        <div class="row">
+          <div
+            class="col-xl-8 col-lg-7 pr-45 pr-md-15 pr-xs-15 services-single-content"
+          >
+            <h1>Content Marketing</h1>
+            <img
+              src="/assets/img/service/charity-content-marketing.png"
+              alt="Android App Development"
+              style="width: 500px"
+            />
+            <div class="service-single-thumb"></div>
+            <h3 id="what-is-content-marketing-" style="padding-top: 20px;">
+              What is Content Marketing?
+            </h3>
+            <p>
+              Content marketing is a strategy of promoting or communicating a
+              product, service, or idea to customers using content.
+            </p>
+            <p>
+              Content marketing is the promotion of products, services, and
+              ideas by using text, images, and other forms of media. It is an
+              effective way for companies to demonstrate the value they provide
+              while educating their customers about what they have to offer.
+              Content can be in various formats such as blogs, videos,
+              infographics, and more.
+            </p>
+            <h3 id="social-media-content-marketing">
+              Social Media Content Marketing
+            </h3>
+            <p>
+              Social media content marketing is a method in which the content
+              itself serves as advertising. It involves creating high-quality,
+              engaging content that generates interest from potential customers
+              and encourages them to take action. Businesses can leverage
+              platforms like Facebook, Instagram, and Twitter to promote their
+              products and services cost-effectively.
+            </p>
+            <h3 id="infographic-content-marketing">
+              Infographic Content Marketing
+            </h3>
+            <p>
+              Infographic content marketing involves creating visually appealing
+              infographics containing data-driven, educational information to
+              promote businesses or products. Infographics are highly shareable
+              across social media platforms and provide an engaging way to
+              communicate complex information. They can be static or animated,
+              depending on the desired level of interactivity.
+            </p>
+
+            <div class="faq-style-one service-faq mt-40">
+              <h2 class="mb-30">Questions about service</h2>
+              <div class="accordion mt--20" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What are the benefits of content marketing?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Content marketing offers numerous benefits for
+                        businesses, including increased brand awareness,
+                        improved customer engagement, enhanced credibility and
+                        authority in the industry, higher website traffic, and
+                        better conversion rates. By consistently creating
+                        valuable and relevant content, businesses can attract
+                        and retain their target audience, ultimately driving
+                        business growth and success.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How can social media be utilized for content marketing?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Social media platforms are powerful tools for content
+                        marketing. Businesses can use platforms like Facebook,
+                        Instagram, and Twitter to share their content with a
+                        wide audience, engage with followers, and build
+                        relationships. Social media also allows for targeted
+                        advertising, enabling businesses to reach specific
+                        demographics and increase brand visibility.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      What types of content are effective for content marketing?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Effective content marketing encompasses a variety of
+                        content types, including blog posts, videos,
+                        infographics, podcasts, eBooks, and case studies. The
+                        key is to create content that resonates with the target
+                        audience and provides value. Diversifying content
+                        formats can help businesses reach different segments of
+                        their audience and keep them engaged.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar"
+          >
+            <div class="single-widget services-list-widget">
+              <h4 class="widget-title">Services</h4>
+              <!-- <ul>
+                                {
+                                    Object.keys(serviceList).map((category) => {
+                                        // Check if the category matches the folderName
+                                        if (category === folderName) {
+                                            return (
+                                                <li>
+                                                    <ul>
+                                                        {Object.keys(
+                                                            serviceList[
+                                                                category
+                                                            ],
+                                                        ).map((service) => {
+                                                            // Filter out data according to JSON format
+                                                            if (
+                                                                serviceList[
+                                                                    category
+                                                                ][service] !==
+                                                                ""
+                                                            ) {
+                                                                return (
+                                                                    <li>
+                                                                        <a
+                                                                            href={
+                                                                                serviceList[
+                                                                                    category
+                                                                                ][
+                                                                                    service
+                                                                                ]
+                                                                            }
+                                                                        >
+                                                                            {service
+                                                                                .replace(
+                                                                                    /([A-Z])/g,
+                                                                                    " $1",
+                                                                                )
+                                                                                .replace(
+                                                                                    /^./,
+                                                                                    (
+                                                                                        str,
+                                                                                    ) =>
+                                                                                        str.toUpperCase(),
+                                                                                )}
+                                                                            <i class="fas fa-angle-right" />
+                                                                        </a>
+                                                                    </li>
+                                                                );
+                                                            }
+                                                            return null;
+                                                        })}
+                                                    </ul>
+                                                </li>
+                                            );
+                                        }
+                                        return null;
+                                    })
+                                }
+                            </ul> -->
+            </div>
+
+            <!-- End Single Widget -->
+            <div
+              class="single-widget quick-contact-widget text-light"
+              style="background-image: url(/assets/img/contact.png);"
+            >
+              <div class="content">
+                <h3>Need Help?</h3>
+                <p>
+                  Speak with a human to filling out a form? call corporate
+                  office and we will connect.
+                </p>
+                <h2>+(44)7429 466754</h2>
+                <h4>
+                  <a href="mailto:info@digital.com"
+                    >info@technoservesolutions.com</a
+                  >
+                </h4>
+                <a class="btn mt-30 circle btn-sm btn-gradient" href="/contact"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <!-- Single Widget -->
+            <div class="single-widget widget-brochure">
+              <h4 class="widget-title">Brochure</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-file-pdf"></i> Download Brochure
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-file-pdf"></i> Company Details
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Single Widget -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services Details Area -->
+</Layout>

@@ -1,22 +1,40 @@
----
-import Layout from "../layouts/Layout.astro";
-import ourteamList from "../../public/assets/js/developers-list";
-import SliderNew from "../components/SliderNew.astro";
-const { frontmatter } = Astro.props;
-const url = Astro.url.pathname;
-const segments = url.split("/"); // Split the URL by '/'
-const folderName = segments[segments.length - 2];
-const teamCategory = folderName; // Set the category (e.g., webdevelopment)
-const teamMembers = ourteamList[teamCategory];
-
-const getGridTemplateColumns = (length) => {
-    if (length === 1) return "1fr";
-    if (length <= 4) return "repeat(2, 1fr)";
-    return "repeat(3, 1fr)";
-};
+﻿---
+import Layout from "../../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+import ourteamList from "../../../../public/assets/js/developers-list";
+import SliderNew from "../../../components/SliderNew.astro";
 ---
 
-<Layout title={frontmatter.title + "- Techno Serve Solution"}>
+<SEO
+    title="Website Development - Techno Serve Solutions Agency 2024"
+    description="A heavily optimized description full of well-researched keywords."
+    openGraph={{
+        basic: {
+            title: "A Very Descriptive Title",
+            type: "A type.",
+            image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        },
+    }}
+    twitter={{
+        creator: "@jonasmerlins1",
+    }}
+    extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+            {
+                name: "twitter:image",
+                content:
+                    "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+            },
+            { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+            { name: "twitter:description", content: "Agent" },
+        ],
+    }}
+/>
+
+<Layout>
     <!-- Start Breadcrumb 
     ============================================= -->
     <div
@@ -38,8 +56,7 @@ const getGridTemplateColumns = (length) => {
                                     >
                                 </li>
                                 <li><a href="/services">Services</a></li>
-                                <!-- <li>{folderName}</li> -->
-                                <li class="active">{frontmatter.title}</li>
+                                <li class="active">website Development</li>
                             </ol>
                         </nav>
                     </div>
@@ -56,9 +73,9 @@ const getGridTemplateColumns = (length) => {
         class="section-one container d-md-flex col-12 my-2 my-md-3 align-items-center"
     >
         <div class="col-12 col-md-6">
-            <p class="fw-bold text-black display-4">
+            <h1 class="fw-bold text-black display-4">
                 Website Development Services
-            </p>
+            </h1>
         </div>
         <div class="col-12 col-md-6 px-md-5 mx-md-5">
             <p class="text-black our-font mb-md-4 pe-2 px-md-0 mx-md-0">
@@ -83,7 +100,7 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Two Start -->
     <div class="section-two container d-md-flex align-items-center col-12 my-5">
         <div class="col-12 col-md-7 pe-2 me-2 pe-md-5 me-md-5">
-            <p class="fw-bold text-black display-6">Why Choose Us</p>
+            <h2 class="fw-bold text-black display-6">Why Choose Us</h2>
             <p class="text-black mb-md-4 pe-2 px-md-0 mx-md-0 our-font">
                 At Techno Serve Software Solutions, we create user-friendly
                 websites that reflect your brand identity, deliver results
@@ -156,9 +173,9 @@ const getGridTemplateColumns = (length) => {
     <div class="section-three">
         <div class="row container h-auto py-2 py-md-5">
             <div class="container content col-12 col-md-9 mx-md-5 mt-3 mt-md-0">
-                <p class="slider-heading our-heading fw-bold">
+                <h2 class="slider-heading our-heading fw-bold">
                     Explore our work projects
-                </p>
+                </h2>
                 <p class="text-white our-font">
                     Discover our impactful projects, from website development to
                     marketing, supporting Islamic charities for lasting change.
@@ -187,9 +204,9 @@ const getGridTemplateColumns = (length) => {
             />
         </div>
         <div class="col-12 col-md-8 px-md-5 mx-md-5 px-2 mt-4 mt-md-0">
-            <p class="fw-bold text-black display-6">
+            <h2 class="fw-bold text-black display-6">
                 Mobile-First Optimized Websites
-            </p>
+            </h2>
             <p class="text-black our-font">
                 90% of the traffic comes from Mobile across the globe and Google
                 is keen to focus on mobile-first indexing, it's crucial for your
@@ -201,7 +218,10 @@ const getGridTemplateColumns = (length) => {
             </p>
             <div class="d-flex justify-content-center justify-content-md-start">
                 <button class="btn section-four-btn mt-4 mx-md-0"
-                    >Random Page<i class="fas fa-arrow-right"></i></button
+                    ><a
+                        href="https://technoservesolutions.com/services/designing/web-ui-ux-design"
+                        class="text-white">UI UX Designer</a
+                    ><i class="fas fa-arrow-right"></i></button
                 >
             </div>
         </div>
@@ -211,9 +231,9 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Five Start -->
     <div class="section-two container d-md-flex align-items-center col-12">
         <div class="col-12 col-md-7 me-md-5 pe-md-5">
-            <p class="fw-bold text-black display-6">
+            <h2 class="fw-bold text-black display-6">
                 We are more than just your web design team
-            </p>
+            </h2>
             <p class="text-black mb-2 pe-2 me-md-5 pe-md-5 mb-md-4 our-font">
                 We're here to elevate your business with our web development
                 expertise. Our team conducts an in-depth analysis of your
@@ -222,54 +242,69 @@ const getGridTemplateColumns = (length) => {
             </p>
             <div class="d-flex justify-content-center justify-content-md-start">
                 <button class="btn section-four-btn mt-4 mx-md-0"
-                    >Random Page<i class="fas fa-arrow-right"></i></button
+                    ><a
+                        href="https://technoservesolutions.com/contact"
+                        class="text-white">Contact Our Experts</a
+                    ><i class="fas fa-arrow-right"></i></button
                 >
             </div>
         </div>
         <div class="col-12 col-md-5 mt-4 mt-md-0">
-            <!-- <div>
-                <div class="profile-grid">
-                    {
-                        ourteamList.developers.map((developer, index) => (
-                            <div class="profile-item">
-                                <img
-                                    src={'/assets/img/service/OurTeam/'+developer.image}
-                                    alt={developer.name}
-                                />
-                            </div>
-                        ))
-                    }
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/anwar.png"
+                        alt="anwar"
+                    />
                 </div>
-            </div> -->
-            <!-- <div>
-                <div class="profile-grid-">
-                    {
-                        ourteamList.folderName.map((designer, index) => (
-                            <div class="profile-item">
-                                <img
-                                    src={'/assets/img/service/OurTeam/'+folderName.image}
-                                    alt={folderName.name}
-                                />
-                            </div>
-                        ))
-                    }
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/mubin.png"
+                        alt="mubin"
+                    />
                 </div>
-            </div> -->
-
-            <div
-                class="profile-grid"
-                style={`grid-template-columns: ${getGridTemplateColumns(teamMembers.length)};`}
-            >
-                {
-                    teamMembers.map((member) => (
-                        <div class="profile-item" key={member.name}>
-                            <img
-                                src={`/assets/img/service/OurTeam/${member.image}`}
-                                alt={`${member.name}'s Profile`}
-                            />
-                        </div>
-                    ))
-                }
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/sahil.png"
+                        alt="sahil"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/hussain.png"
+                        alt="hussain"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/samshad.png"
+                        alt="samshad"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/kaseem.png"
+                        alt="kaseem"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/ayann.png"
+                        alt="ayann"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/danial.png"
+                        alt="danial"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/ahmed.png"
+                        alt="ahmed"
+                    />
+                </div>
             </div>
         </div>
     </div>
@@ -282,7 +317,7 @@ const getGridTemplateColumns = (length) => {
             <h2 class="mb-30 fw-bold"><b>FAQs</b></h2>
             <div class="accordion mt--20" id="faqAccordion">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                    <h3 class="accordion-header" id="headingOne">
                         <button
                             class="accordion-button"
                             type="button"
@@ -291,9 +326,10 @@ const getGridTemplateColumns = (length) => {
                             aria-expanded="true"
                             aria-controls="collapseOne"
                         >
-                            {frontmatter.faqtitle1}
+                            What is the process for developing a website at
+                            Techno Serve Software Solutions?
                         </button>
-                    </h2>
+                    </h3>
                     <div
                         id="collapseOne"
                         class="accordion-collapse collapse show"
@@ -302,13 +338,17 @@ const getGridTemplateColumns = (length) => {
                     >
                         <div class="accordion-body">
                             <p class="our-font">
-                                {frontmatter.faqtext1}
+                                Techno Serve Software Solutions, we handle every
+                                aspect of website development, including design,
+                                coding, maintenance, and management, ensuring
+                                that your website meets business needs and
+                                engages traffic effectively.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
+                    <h3 class="accordion-header" id="headingTwo">
                         <button
                             class="accordion-button collapsed"
                             type="button"
@@ -317,9 +357,10 @@ const getGridTemplateColumns = (length) => {
                             aria-expanded="false"
                             aria-controls="collapseTwo"
                         >
-                            {frontmatter.faqtitle2}
+                            Why should I choose Techno Serve Software Solutions
+                            for my website development needs?
                         </button>
-                    </h2>
+                    </h3>
                     <div
                         id="collapseTwo"
                         class="accordion-collapse collapse"
@@ -328,13 +369,17 @@ const getGridTemplateColumns = (length) => {
                     >
                         <div class="accordion-body">
                             <p class="our-font">
-                                {frontmatter.faqtext2}
+                                We create user-friendly websites that reflect
+                                your brand identity, deliver results quickly,
+                                and stay within budget. Our small teams provide
+                                personalized attention, competitive pricing, and
+                                advanced SEO to enhance your site's visibility.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item mb-5">
-                    <h2 class="accordion-header" id="headingThree">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
                         <button
                             class="accordion-button collapsed"
                             type="button"
@@ -343,9 +388,9 @@ const getGridTemplateColumns = (length) => {
                             aria-expanded="false"
                             aria-controls="collapseThree"
                         >
-                            {frontmatter.faqtitle3}
+                            Do you offer mobile-responsive web design?
                         </button>
-                    </h2>
+                    </h3>
                     <div
                         id="collapseThree"
                         class="accordion-collapse collapse"
@@ -354,7 +399,75 @@ const getGridTemplateColumns = (length) => {
                     >
                         <div class="accordion-body">
                             <p class="our-font">
-                                {frontmatter.faqtext3}
+                                Yes, we prioritize mobile-first optimization in
+                                our web design services. With 90% of global
+                                traffic coming from mobile devices, we ensure
+                                that your website offers a consistent and
+                                seamless experience across all devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                        >
+                            How do you ensure that my website will be
+                            user-friendly?
+                        </button>
+                    </h3>
+                    <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            <p class="our-font">
+                                Our team conducts an in-depth analysis of your
+                                business to create designs that are both simple
+                                and visually appealing. We focus on how designs
+                                appear and how easy they are to navigate across
+                                various devices, ensuring a consistent user
+                                experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-5">
+                    <h3 class="accordion-header" id="headingFive">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
+                        >
+                            What types of web development services do you offer?
+                        </button>
+                    </h3>
+                    <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            <p class="our-font">
+                                We offer a range of web development services,
+                                including database application and system
+                                integration, lead capturing and custom forms,
+                                mobile and responsive development, and the use
+                                of advanced languages and frameworks. We also
+                                provide UX consulting and marketing strategy
+                                services.
                             </p>
                         </div>
                     </div>
@@ -416,6 +529,7 @@ const getGridTemplateColumns = (length) => {
     <!-- Section Seven End -->
 
     <!-- End Services Details Area -->
+
     <style>
         .breadcrumb-area {
             /* margin-top: -50px; */
@@ -579,24 +693,24 @@ const getGridTemplateColumns = (length) => {
 
         .profile-grid {
             display: grid;
-            gap: 20px; /* Adjust the gap between items */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; /* Adjust the gap between items */
             padding: 20px; /* Optional, to add some padding around the grid */
             max-width: 900px; /* Adjust width as needed */
             margin: 0 auto; /* Center the grid horizontally */
         }
 
         .profile-item {
-            background-color: #fff;
+            background-color: #000;
             border-radius: 15px;
             overflow: hidden;
-            border: 2px solid black;
+            border: 2px solid #000; /* To match the rounded corners and frame */
         }
 
         .profile-item img {
             display: block;
             width: 100%;
             height: auto;
-            object-fit: cover;
         }
     </style>
 
