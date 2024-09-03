@@ -1,360 +1,643 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-// import serviceList from "../../public/assets/js/service-list";
-// const { frontmatter } = Astro.props;
-
-// const url = Astro.url.pathname;
-// const segments = url.split("/"); // Split the URL by '/'
-// const folderName = segments[segments.length - 3];
 import { SEO } from "astro-seo";
-
+import ourteamList from "../../../../public/assets/js/developers-list";
+import SliderNew from "../../../components/SliderNew.astro";
 ---
+
 <SEO
-      title="Advertising - Techno Serve Solutions Agency 2024"
-      description="A heavily optimized description full of well-researched keywords."
-      openGraph={{
+    title="Charity Advertising - Techno Serve Solutions Agency 2024"
+    description="A heavily optimized description full of well-researched keywords."
+    openGraph={{
         basic: {
-          title: "A Very Descriptive Title",
-          type: "A type.",
-          image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-        }
-      }}
-      twitter={{
-        creator: "@jonasmerlins1"
-      }}
-      extend={{
+            title: "A Very Descriptive Title",
+            type: "A type.",
+            image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+        },
+    }}
+    twitter={{
+        creator: "@jonasmerlins1",
+    }}
+    extend={{
         // extending the default link tags
-        link: [{ rel: "icon", href: "/favicon.ico" }],
+        link: [{ rel: "icon", href: "/assets/img/favicon.png" }],
         // extending the default meta tags
         meta: [
-          {
-            name: "twitter:image",
-            content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-          },
-          { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
-          { name: "twitter:description", content: "Agent" },
+            {
+                name: "twitter:image",
+                content:
+                    "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+            },
+            { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+            { name: "twitter:description", content: "Agent" },
         ],
-      }}
-    />
+    }}
+/>
+
 <Layout>
-  <!-- Start Breadcrumb 
+    <!-- Start Breadcrumb 
     ============================================= -->
-  <div
-    class="breadcrumb-area bg-gray bg-cover"
-    style="background-image: url(/assets/img/shape/banner-3.jpg);"
-  >
-    <div class="container">
-      <div class="breadcrumb-item">
-        <div class="breadcrum-shape">
-          <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+    <div
+        class="breadcrumb-area bg-gray bg-cover"
+        style="background-image: url(/assets/img/shape/banner-3.jpg);"
+    >
+        <div class="container">
+            <div class="breadcrumb-item">
+                <div class="breadcrum-shape">
+                    <img src="/assets/img/shape/16.png" alt="Image Not Found" />
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="/"
+                                        ><i class="fas fa-home"></i> Home</a
+                                    >
+                                </li>
+                                <li><a href="/services">Services</a></li>
+                                <li class="active">Charity Advertising</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-lg-8">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li>
-                  <a href="/"><i class="fas fa-home"></i> Home</a>
-                </li>
-                <li><a href="/services">Services</a></li>
-                <!-- <li>{folderName}</li> -->
-                <li class="active">Advertising</li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <!-- End Breadcrumb -->
+    <!-- End Breadcrumb -->
 
-  <!-- Star Services Details Area
+    <!-- Star Services Details Area
     ============================================= -->
-  <div class="services-details-area default-padding">
-    <div class="container">
-      <div class="services-details-items">
-        <div class="row">
-          <div
-            class="col-xl-8 col-lg-7 pr-45 pr-md-15 pr-xs-15 services-single-content"
-          >
-            <h1>Advertising</h1>
+    <!-- Section One Start -->
+    <div
+        class="section-one container d-md-flex col-12 my-2 my-md-3 align-items-center"
+    >
+        <div class="col-12 col-md-6">
+            <h1 class="fw-bold text-black display-4">Charity Advertising for Nonprofit Organization
+            </h1>
+        </div>
+        <div class="col-12 col-md-6 px-md-5 mx-md-5">
+            <p class="text-black our-font mb-md-4 pe-2 px-md-0 mx-md-0">
+              We make a plan to find potential donors online. We focus on their interests. Then, we design ads that encourage them to donate to your organization.
+            </p>
+        </div>
+    </div>
+    <!-- Section one End -->
+
+    <!-- Image section Start Here -->
+    <div class="container mb-5">
+        <img
+            src="/assets/img/service/website-development2.png"
+            alt="Website Development"
+            class="img-fluid"
+        />
+    </div>
+    <!-- Image section End Here -->
+
+    <!-- Section Two Start -->
+    <div class="section-two container d-md-flex align-items-center col-12 my-5">
+        <div class="col-12 col-md-7 pe-2 me-2 pe-md-5 me-md-5">
+            <h2 class="fw-bold text-black display-6">
+              What Services We Offer            </h2>
+            <p class="text-black mb-md-4 pe-2 px-md-0 mx-md-0 our-font">
+              At Techno Serve Solutions, we specialize in delivering comprehensive Google Ads services created to meet your charity objectives. Our advertising experts design your campaigns for maximum impact, driving both traffic and conversions (donations). Here are some of the services what we offer:
+            </p>
+            <div class="d-md-flex mb-4 text-start">
+                <div class="col-12 col-md-7 px-md-0 px-2">
+                    <ul class="list-group">
+                        <li>
+                            <i class="fas fa-check list-group-content"></i>
+                            <span class="fw-bold"
+                                >&nbsp;&nbsp;Search Ads
+                                </span
+                            >
+                        </li>
+                        <li>
+                            <i class="fas fa-check list-group-content"></i><span
+                                class="fw-bold"
+                            >
+                                &nbsp;&nbsp;Display Ads
+                                </span
+                            >
+                        </li>
+                        <li>
+                            <i class="fas fa-check list-group-content"></i>
+                            <span class="fw-bold"
+                                >&nbsp;&nbsp;Video Ads
+                                </span
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-7 px-md-0 px-2">
+                    <ul class="list-group">
+                        <li>
+                            <i class="fas fa-check list-group-content"></i><span
+                                class="fw-bold"
+                            >
+                                &nbsp;Shopping Ads
+                                </span
+                            >
+                        </li>
+                        <li>
+                            <i class="fas fa-check list-group-content"></i><span
+                                class="fw-bold"
+                                >&nbsp;&nbsp;App Promotion Ads
+                                </span
+                            >
+                        </li>
+                        <li>
+                            <i class="fas fa-check list-group-content"></i><span
+                                class="fw-bold"
+                                >&nbsp;&nbsp;Remarketing
+                                </span
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-5">
             <img
-              src="/assets/img/service/charity-advertising.png"
-              alt="Android App Development"
-              style="width: 500px"
+                src="/assets/img/service/why-choose-us.png"
+                alt="Why Choose Us"
+                class="img-fluid"
             />
-            <div class="service-single-thumb"></div>
-            <h2 id="what-is-ppc-online-advertising-" style="padding-top: 20px;">
-              What is PPC (Online Advertising)
-            </h2>
-            <p>
-              PPC is a form of <a href="https://qasimfarooqi.com/"
-                >online advertising</a
-              >. This is the most popular method of digital marketing. It’s done
-              by bidding on specific keywords on paid online advertising
-              networks such as Google AdWords and Facebook Ads.
-            </p>
-            <p>
-              With PPC, businesses can pay per click (PPC) or per action (PPA)
-              to promote their product or service to searchers on search engines
-              and social media sites like Facebook and Twitter.
-            </p>
-            <p>
-              With this method, companies can set a budget and then measure
-              return on investment (ROI) by comparing statistics like how many
-              visitors came to the website from social media or how many people
-              clicked on an ad and then bought something from the company’s
-              website.
-            </p>
-            <h3 id="google-ads-ppc">Google Ads PPC</h3>
-            <p>
-              Google ads are the most popular online advertising platform in the
-              world. They cover a wide range of devices and platforms. Google
-              Ads is a platform for advertisers and marketers to promote their
-              products and services through different ad units, which include:
-              text link, image, video, or native.
-            </p>
-            <p>
-              Advantages: Google ads offer high quality targeting mechanisms.
-              This means that users can target customers by location, language,
-              specific interests, device type and more. The targeting also
-              allows you to show your ads to customers based on their age group
-              or gender.
-            </p>
-            <p>
-              Disadvantages: Google Adwords requires a lot of work upfront
-              before you start generating any traffic because you need to create
-              an account and set up your campaigns before you start bidding on
-              keywords and displaying ads.
-            </p>
-            <h3 id="facebook-ads-ppc">Facebook Ads PPC</h3>
-            <p>
-              Facebook has always been a social platform that has been used to
-              create social connections. Facebook Ads is a way to use this same
-              platform to acquire customers through ads based on demographics,
-              interests, and behaviors. In order to do this successfully, we
-              need to take advantage of all the online advertising tools
-              Facebook offers us.
-            </p>
-            <p>
-              Facebook provides advertisers with several different types of
-              tools for their PPC campaigns. These include: Audience Insights
-              (which allows advertisers to segment and target based on
-              demographic and other data) and Lookalike Audiences (which allow
-              advertisers to expand their reach by targeting people who are
-              similar to those who have already liked their page).
-            </p>
-
-            <div class="faq-style-one service-faq mt-40">
-              <h2 class="mb-30">Questions about service</h2>
-              <div class="accordion mt--20" id="faqAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      What is PPC (Online Advertising)?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        PPC, or pay-per-click advertising, is a digital
-                        marketing method where advertisers bid on specific
-                        keywords to display their ads on search engines and
-                        social media platforms. Businesses pay each time a user
-                        clicks on their ad or performs a specific action, such
-                        as making a purchase. PPC allows businesses to target
-                        their audience effectively and measure the return on
-                        investment (ROI) of their advertising campaigns.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      What are the advantages of Google Ads PPC?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Google Ads PPC offers high-quality targeting options,
-                        allowing advertisers to reach customers based on
-                        location, language, interests, device type, and more. It
-                        provides a wide reach across various devices and
-                        platforms, including text links, images, videos, and
-                        native ads.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      What are the benefits of Facebook Ads PPC?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Facebook Ads PPC enables advertisers to target customers
-                        based on demographics, interests, and behaviors,
-                        leveraging the social platform's vast user data. It
-                        offers tools like Audience Insights and Lookalike
-                        Audiences to refine targeting and expand reach. Facebook
-                        Ads can be highly effective for driving engagement and
-                        conversions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar"
-          >
-            <div class="single-widget services-list-widget">
-              <h4 class="widget-title">Services</h4>
-              <!-- <ul>
-                                {
-                                    Object.keys(serviceList).map((category) => {
-                                        // Check if the category matches the folderName
-                                        if (category === folderName) {
-                                            return (
-                                                <li>
-                                                    <ul>
-                                                        {Object.keys(
-                                                            serviceList[
-                                                                category
-                                                            ],
-                                                        ).map((service) => {
-                                                            // Filter out data according to JSON format
-                                                            if (
-                                                                serviceList[
-                                                                    category
-                                                                ][service] !==
-                                                                ""
-                                                            ) {
-                                                                return (
-                                                                    <li>
-                                                                        <a
-                                                                            href={
-                                                                                serviceList[
-                                                                                    category
-                                                                                ][
-                                                                                    service
-                                                                                ]
-                                                                            }
-                                                                        >
-                                                                            {service
-                                                                                .replace(
-                                                                                    /([A-Z])/g,
-                                                                                    " $1",
-                                                                                )
-                                                                                .replace(
-                                                                                    /^./,
-                                                                                    (
-                                                                                        str,
-                                                                                    ) =>
-                                                                                        str.toUpperCase(),
-                                                                                )}
-                                                                            <i class="fas fa-angle-right" />
-                                                                        </a>
-                                                                    </li>
-                                                                );
-                                                            }
-                                                            return null;
-                                                        })}
-                                                    </ul>
-                                                </li>
-                                            );
-                                        }
-                                        return null;
-                                    })
-                                }
-                            </ul> -->
-            </div>
-
-            <!-- End Single Widget -->
-            <div
-              class="single-widget quick-contact-widget text-light"
-              style="background-image: url(/assets/img/contact.png);"
-            >
-              <div class="content">
-                <h3>Need Help?</h3>
-                <p>
-                  Speak with a human to filling out a form? call corporate
-                  office and we will connect.
-                </p>
-                <h2>+(44)7429 466754</h2>
-                <h4>
-                  <a href="mailto:info@digital.com"
-                    >info@technoservesolutions.com</a
-                  >
-                </h4>
-                <a class="btn mt-30 circle btn-sm btn-gradient" href="/contact"
-                  >Contact Us</a
-                >
-              </div>
-            </div>
-            <!-- Single Widget -->
-            <div class="single-widget widget-brochure">
-              <h4 class="widget-title">Brochure</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fas fa-file-pdf"></i> Download Brochure
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fas fa-file-pdf"></i> Company Details
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Single Widget -->
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- End Services Details Area -->
+
+    <!-- Section Two End -->
+
+    <!-- Section Three Start -->
+    <div class="section-three">
+        <div class="row container h-auto py-2 py-md-5">
+            <div class="container content col-12 col-md-9 mx-md-5 mt-3 mt-md-0">
+                <h2 class="slider-heading our-heading fw-bold">
+                  Best PPC Projects for Nonprofit                </h2>
+                <p class="text-white our-font">
+                  Techno Serve Solutions delivers exceptional PPC (Pay Per Click) campaigns designed to maximize your return on investment.
+
+                </p>
+            </div>
+
+            <div class="blank col-3 d-none d-md-block"></div>
+        </div>
+
+        <div class="slider-section pb-5">
+            <SliderNew />
+        </div>
+    </div>
+    <!-- Section Three End -->
+
+    <!-- Section Four Start -->
+    <div
+        class="section-four container d-md-flex align-items-center col-12 my-5"
+    >
+        <div class="container col-12 col-md-4">
+            <img
+                src="/assets/img/service/mobile-first-opti.png"
+                alt="Mobile First Optimization"
+                class="img-fluid"
+            />
+        </div>
+        <div class="col-12 col-md-8 px-md-5 mx-md-5 px-2 mt-4 mt-md-0">
+            <h2 class="fw-bold text-black display-6">
+              The Perfect PPC Agency for Your Charity          </h2>
+            <p class="text-black our-font">
+              Techno Serve Solutions helps manage PPC campaigns, creating custom strategies to attract more visitors and boost your donations. Our experts combine industry knowledge with advanced techniques to optimize your campaigns and deliver measurable results. Trust us to enhance your online presence and achieve your business objectives efficiently. <br><br>
+              Our goal is to get the best outcome through your targeted campaigns, data analyzing, and ongoing improvement. This will help increase donations and maximize your ROI. Now is a great time to trust Techno Serve for your charity campaigns to boost website donations and raise brand awareness.
+              
+                
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-start">
+                <button class="btn section-four-btn mt-4 mx-md-0"
+                    ><a
+                        href="https://technoservesolutions.com/services/web-development/website-development/"
+                        class="text-white">Social Media Marketing
+                        </a
+                    ><i class="fas fa-arrow-right"></i></button
+                >
+            </div>
+        </div>
+    </div>
+    <!-- Section Four End -->
+
+    <!-- Section Five Start -->
+    <div class="section-two container d-md-flex align-items-center col-12">
+        <div class="col-12 col-md-7 me-md-5 pe-md-5">
+            <h2 class="fw-bold text-black display-6">
+              Our Experts for Your Nonprofit Advertising            </h2>
+            <p class="text-black mb-2 pe-2 me-md-5 pe-md-5 mb-md-4 our-font">
+              We create tailored PPC strategies to boost traffic, improve conversions, and help your charity achieve its goals effectively. 
+              Our PPC campaigns are precise and high-performing, delivering maximum impact for your nonprofit organization.
+              
+
+            </p>
+            <div class="d-flex justify-content-center justify-content-md-start">
+                <button class="btn section-four-btn mt-4 mx-md-0"
+                    ><a
+                        href="https://technoservesolutions.com/contact/"
+                        class="text-white">Contact Us</a
+                    ><i class="fas fa-arrow-right"></i></button
+                >
+            </div>
+        </div>
+        <div class="col-12 col-md-5 mt-4 mt-md-0">
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/abrar.png"
+                        alt="anwar"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/qasim.png"
+                        alt="mubin"
+                    />
+                </div>
+                <div class="profile-item">
+                    <img
+                        src="/assets/img/service/OurTeam/tanveer.png"
+                        alt="sahil"
+                    />
+                </div>
+               
+             
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Five End -->
+
+    <!-- Section Six Faq Section Start -->
+    <div class="section-six container">
+        <div class="faq-style-one service-faq mt-40">
+            <h2 class="mb-30 fw-bold"><b>Frequently Asked Questions</b></h2>
+            <div class="accordion mt--20" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                        >
+                        What Is Pay-Per-Click (PPC) Advertising for Charity?
+                      </button>
+                    </h3>
+                    <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            <p class="our-font">
+                              PPC is an online advertising model where advertisers (You) pay a fee each time the user clicks your ad. You can attract visitors to your website by bidding on keywords related to charity or nonprofit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                        >
+                        How Does a PPC Campaign Work?
+                      </button>
+                    </h3>
+                    <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            <p class="our-font">
+                              A PPC campaign involves creating ads that appear in search engine results or on websites. Advertisers bid on keywords, and they show their ads to donors searching for those terms.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                        >
+                        What Are the Benefits of Working With a Charity Advertising Agency?
+
+                        </button>
+                    </h3>
+                    <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            <p class="our-font">
+                              Our charity advertising agency can help your charity become more visible. It can also help you reach more people and raise more money. Additionally, working with us can improve your connection with potential donors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-5">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                        >
+                        Why Choose Techno Serve Solutions for PPC Management?
+                      </button>
+                    </h3>
+                    <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion"
+                    >
+                        <div class="accordion-body">
+                            <p class="our-font">
+                              Techno Serve Solutions provides you with customized PPC strategies designed to drive donors and boost your charity donations. Our expert team uses advanced and proven techniques for analyzing data to optimize campaigns to achieve measurable results.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+       
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Six Faq Section End -->
+
+    <!-- Section Seven Start -->
+    <div class="container d-none d-md-block">
+        <div
+            class="section-seven h-100 rounded-3 d-md-flex align-items-center p-5 mb-5"
+        >
+            <div class="content col-12 col-md-6">
+                <h2 class="text-white display-6 fw-bold">
+                    Tell us about your project
+                </h2>
+                <p class="text-white">
+                    To find out more about our services and how we can <br /> help
+                    your business, please get in touch.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="d-md-flex email-section">
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        class="form-control"
+                    />
+                    <button class="seven-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for mobile  -->
+    <div class="container section-seven-mobile d-md-none">
+        <div class="content">
+            <h2 class="text-white display-6 fw-bold">
+                Tell us about your project
+            </h2>
+            <p class="text-white">
+                To find out more about our services and how we can help your
+                business, please get in touch.
+            </p>
+            <div class="d-flex col-12 email-section-mobile mt-5">
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="form-control"
+                />
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Seven End -->
+
+    <!-- End Services Details Area -->
+
+    <style>
+        .breadcrumb-area {
+            /* margin-top: -50px; */
+        }
+        .breadcrumb-item {
+            /* margin-top: -50px; */
+        }
+        .section-three {
+            background-color: #282828;
+        }
+        .slider-heading {
+            color: #5c82ff;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 200px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 60%;
+        }
+        .swiper-slide:nth-child(2n) {
+            /* width: 60%; */
+        }
+
+        .swiper-slide:nth-child(3n) {
+            /* width: 40%; */
+        }
+        .slider-section {
+            height: 80vh;
+        }
+        .our-heading {
+            font-size: 1.75rem;
+        }
+        .our-font {
+            font-size: 1.25rem;
+        }
+        @media (max-width: 768px) {
+            .slider-section {
+                height: 56vh;
+            }
+            .our-font {
+                font-size: 1rem;
+                color: black;
+            }
+            .our-heading {
+                font-size: 0.9rem;
+            }
+        }
+        .slider-section .swiper-content {
+            background-color: #282828;
+        }
+        .section-four-btn {
+            background-color: #8e66ff !important;
+        }
+        .section-seven {
+            background-image: url("/assets/img/service/article-section.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .section-seven-mobile {
+            width: 90%;
+            height: 500px;
+            background-image: url("/assets/img/service/article-section-mobile.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 13px;
+            margin-bottom: 2rem;
+            padding: 100px 20px;
+        }
+        .email-section {
+            background-image: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 0.329),
+                white
+            );
+            border-radius: 5px;
+            padding: 5px 5px 5px 5px;
+            border: white 1px solid;
+        }
+        .email-section-mobile {
+            background-image: linear-gradient(
+                to left,
+                rgba(0, 0, 0, 0.329),
+                white
+            );
+            height: 50px;
+            border-radius: 10px;
+            /* padding: 5px 5px 5px 5px; */
+            border: white 1px solid;
+        }
+
+        .email-section input {
+            background-color: transparent;
+            border: none;
+        }
+        .email-section-mobile input {
+            background-color: transparent;
+            border: none;
+        }
+        .email-section-mobile button {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            padding: 0px 20px 0px 20px;
+            padding-right: 40px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .email-section input:focus input:active {
+            background-color: transparent;
+            border: none;
+        }
+        .email-section input::placeholder {
+            color: #4e4e4e;
+            font-size: 1.3rem;
+        }
+        .email-section-mobile input::placeholder {
+            color: #4e4e4e;
+            font-size: 0.9rem;
+        }
+        .seven-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            /* padding: 10px 20px;  */
+            margin-right: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .seven-btn:hover {
+            background-color: #8e66ff !important;
+        }
+        .seven-btn:focus {
+            background-color: #8e66ff !important;
+        }
+        .list-group-content {
+            color: #8e66ff !important;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; /* Adjust the gap between items */
+            padding: 20px; /* Optional, to add some padding around the grid */
+            max-width: 900px; /* Adjust width as needed */
+            margin: 0 auto; /* Center the grid horizontally */
+        }
+
+        .profile-item {
+            background-color: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #000; /* To match the rounded corners and frame */
+        }
+
+        .profile-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <script
+        is:inline
+        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <script is:inline>
+        var Swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 50,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </Layout>
