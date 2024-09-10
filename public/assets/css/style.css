@@ -3823,7 +3823,7 @@ button i {
 	height: auto;
 }
 
-.banner-style-two h2 {
+.banner-style-two h1 {
 	font-size: 120px;
 	text-transform: uppercase;
 	line-height: 1.1;
@@ -3833,7 +3833,7 @@ button i {
 	margin-top: -10px;
 }
 
-.banner-style-two h2::after {
+.banner-style-two h1::after {
 	position: absolute;
 	left: -10%;
 	content: "";
@@ -7783,7 +7783,7 @@ footer .footer-bottom p {
 		overflow: hidden;
 	}
 
-	.banner-style-two h2 {
+	.banner-style-two h1 {
 		font-size: 80px;
 		margin-bottom: 30px;
 	}
@@ -7798,12 +7798,12 @@ footer .footer-bottom p {
 		padding-bottom: 120px;
 	}
 
-	.banner-style-two h2 strong {
+	.banner-style-two h1 strong {
 		margin-top: 5px;
 		display: block;
 	}
 
-	.banner-style-two h2::after {
+	.banner-style-two h1::after {
 		display: none;
 	}
 
@@ -8348,7 +8348,7 @@ footer .footer-bottom p {
 		overflow: hidden;
 	}
 
-	.banner-style-two h2 {
+	.banner-style-two h1 {
 		font-size: 42px;
 		margin-bottom: 30px;
 	}
@@ -8363,12 +8363,12 @@ footer .footer-bottom p {
 		padding-bottom: 60px;
 	}
 
-	.banner-style-two h2 strong {
+	.banner-style-two h1 strong {
 		margin-top: 5px;
 		display: block;
 	}
 
-	.banner-style-two h2::after {
+	.banner-style-two h1::after {
 		display: none;
 	}
 
@@ -9120,7 +9120,7 @@ footer .footer-bottom p {
 		overflow: hidden;
 	}
 
-	.banner-style-two h2 {
+	.banner-style-two h1 {
 		margin-bottom: 30px;
 	}
 
@@ -9134,12 +9134,12 @@ footer .footer-bottom p {
 		padding-bottom: 140px;
 	}
 
-	.banner-style-two h2 strong {
+	.banner-style-two h1 strong {
 		margin-top: 5px;
 		display: block;
 	}
 
-	.banner-style-two h2::after {
+	.banner-style-two h1::after {
 		display: none;
 	}
 
