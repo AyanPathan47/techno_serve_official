@@ -1,41 +1,39 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-// import serviceList from "../../public/assets/js/service-list";
-// const { frontmatter } = Astro.props;
-
-// const url = Astro.url.pathname;
-// const segments = url.split("/"); // Split the URL by '/'
-// const folderName = segments[segments.length - 3];
 import { SEO } from "astro-seo";
-
+import SliderNew from "../../../components/SliderNew.astro";
 ---
+
 <SEO
-      title="Website Maintenance Services - Techno Serve Solutions Agency 2024"
-      description="A heavily optimized description full of well-researched keywords."
-      openGraph={{
-        basic: {
-          title: "A Very Descriptive Title",
-          type: "A type.",
-          image: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-        }
-      }}
-      twitter={{
-        creator: "@jonasmerlins1"
-      }}
-      extend={{
-        // extending the default link tags"
-        link: [{ rel: "icon", href: "/assets/img/favicon.png" }],
-        // extending the default meta tags
-        meta: [
-          {
-            name: "twitter:image",
-            content: "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
-          },
-          { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
-          { name: "twitter:description", content: "Agent" },
-        ],
-      }}
-    />
+  title="Website Maintenance - Techno Serve Solutions Agency 2024"
+  description="A heavily optimized description full of well-researched keywords."
+  openGraph={{
+    basic: {
+      title: "A Very Descriptive Title",
+      type: "A type.",
+      image:
+        "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/assets/img/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content:
+          "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+      },
+      { name: "twitter:title", content: "Tinker Tailor Soldier Spy" },
+      { name: "twitter:description", content: "Agent" },
+    ],
+  }}
+/>
+
 <Layout>
   <!-- Start Breadcrumb 
     ============================================= -->
@@ -56,8 +54,7 @@ import { SEO } from "astro-seo";
                   <a href="/"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li><a href="/services">Services</a></li>
-                <!-- <li>{folderName}</li> -->
-                <li class="active">Website Maintenance Services</li>
+                <li class="active">Website Maintenance</li>
               </ol>
             </nav>
           </div>
@@ -69,318 +66,590 @@ import { SEO } from "astro-seo";
 
   <!-- Star Services Details Area
     ============================================= -->
-  <div class="services-details-area default-padding">
-    <div class="container">
-      <div class="services-details-items">
-        <div class="row">
-          <div
-            class="col-xl-8 col-lg-7 pr-45 pr-md-15 pr-xs-15 services-single-content"
-          >
-            <h1>Website Maintenance Services</h1>
-            <img
-              src="/assets/img/service/website-maintenance.png"
-              alt="Android App Development"
-              style="width: 500px"
-            />
-            <div class="service-single-thumb"></div>
-            <h3 id="what-is-website-maintenance-" style="padding-top: 20px;">
-              What Is Website Maintenance?
-            </h3>
-            <p>
-              Website maintenance is the process of regularly checking your
-              website for problems and errors, as well as keeping it up to date
-              and relevant. This should be done on a regular basis to keep your
-              website in good working order, to encourage continued traffic
-              growth, and to improve your SEO and Google rankings.
-            </p>
-            <p>
-              In order to engage and retain customers, businesses of all sizes
-              must keep their websites up to date and appealing. It’s all too
-              easy for businesses, particularly startups, to cut corners and
-              delegate a few tasks.
-            </p>
-            <h3 id="why-is-it-important-to-do-website-maintenance-">
-              Why Is It Important to Do Website Maintenance?
-            </h3>
-            <p>
-              Many new businesses already have a lot on their plates without
-              having to worry about constantly checking in on their website.
-              It’s tempting to buy a domain name, set up something temporary,
-              and then worry about it later. Maintaining a current, healthy, and
-              active website is critical for a variety of reasons.
-            </p>
-            <p><strong>SEO</strong></p>
-            <p>
-              You’ll need to keep your website updated on a regular basis if you
-              want to drive traffic to it.<br />Google may even de-index your
-              website entirely if it hasn’t been updated recently enough and
-              they suspect it is infected with malware. To rank well in search
-              results, you must keep your website updated with current content,
-              news, keywords, and articles on a regular basis.
-            </p>
-            <p>Regular website maintenance is essential for SEO strategy.</p>
-            <p><strong>Customer Attraction and Engagement</strong></p>
-            <p>
-              It’s critical to retain potential customers if your website is
-              gaining traction and traffic. If they can’t find what they’re
-              looking for, current information, and relevant content, there’s a
-              good chance they’ll lose interest quickly. To make your website
-              the useful tool you want it to be, make sure it’s free of typos
-              and grammar errors, has all of the information a customer could
-              want, and looks engaging and consistent.
-            </p>
-            <p><strong>Security</strong></p>
-            <p>
-              If you use a website building platform like WordPress or Wix, you
-              must install regular software updates and security patches.
-              Hackers may find it simple and appealing to find and target
-              websites that have been dormant for an extended period of time.
-            </p>
-            <h3 id="how-much-does-website-maintenance-cost-">
-              How Much Does Website Maintenance Cost?
-            </h3>
-            <p>
-              Cost estimates vary depending on what your website is used for,
-              the size of your audience, and the amount of content hosted. The
-              various pricing tiers are discussed further below.
-            </p>
-            <p><strong>Personal Blog in Small Size</strong></p>
-            <p>
-              A small blog typically has little traffic and few requirements.
-              This can be hosted for free on a blogging site like Google
-              Blogger. It could also be self-hosted using a platform like
-              WordPress, with low monthly costs for domain name renewal and
-              hosting service.
-            </p>
-            <p>
-              <strong>Medium-to-Large Active Blog with a Large Audience</strong>
-            </p>
-            <p>
-              If you have a blog that generates income and has a large audience,
-              you will most likely want to be self-hosted with some
-              customizations.
-            </p>
-            <p><strong>Company Website for Marketing Purposes Only</strong></p>
-            <p>
-              This, like the medium-large size blog, must be self-hosted, with a
-              simple design template and limited content. It will require little
-              upkeep due to regular updates, marketing, and backups.
-            </p>
+  <!-- Section One Start -->
+  <div
+    class="section-one container d-md-flex col-12 my-2 my-md-3 align-items-center"
+  >
+    <div class="col-12 col-md-6">
+      <h1 class="fw-bold text-black display-4">
+        Website Maintenance Service from Techno Serve Solutions
+      </h1>
+    </div>
+    <div class="col-12 col-md-6 px-md-5 mx-md-5">
+      <p class="text-black our-font mb-md-4 pe-2 px-md-0 mx-md-0">
+        Ensure your website runs smoothly and securely with Techno Serve
+        Solutions' Website Maintenance Services. From regular updates and
+        security monitoring to performance optimization and 24/7 support, we
+        keep your site in peak condition, allowing you to focus on your
+        business.
+      </p>
+    </div>
+  </div>
+  <!-- Section one End -->
 
-            <div class="faq-style-one service-faq mt-40">
-              <h2 class="mb-30">Questions about service</h2>
-              <div class="accordion mt--20" id="faqAccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Why is website maintenance crucial for businesses?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Website maintenance plays a crucial role in ensuring the
-                        continued functionality, security, and relevance of a
-                        business website. Regular maintenance helps identify and
-                        address issues, update content, and optimize
-                        performance, ultimately enhancing user experience,
-                        driving traffic, and improving search engine rankings.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      What distinguishes professional website maintenance from
-                      sporadic updates?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Professional website maintenance involves proactive
-                        monitoring, regular updates, and comprehensive checks to
-                        ensure the smooth functioning and security of a website.
-                        Unlike sporadic updates, professional maintenance
-                        services adhere to industry best practices, address
-                        potential vulnerabilities, and prioritize the long-term
-                        health and performance of the website.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      How can Techno Serve Ltd's Website Maintenance Services
-                      benefit businesses?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#faqAccordion"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        Techno Serve Ltd offers comprehensive website
-                        maintenance services designed to meet the diverse needs
-                        of businesses across various industries. Our experienced
-                        team of professionals provides proactive monitoring,
-                        timely updates, and security enhancements to keep
-                        websites running smoothly and securely. With our
-                        commitment to excellence and legendary support, we
-                        empower businesses to maintain a strong online presence
-                        and drive digital success effectively.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <!-- Image section Start Here -->
+  <div class="container mb-5">
+    <img
+      src="/assets/img/service/website-development2.png"
+      alt="Website Development"
+      class="img-fluid"
+    />
+  </div>
+  <!-- Image section End Here -->
+
+  <!-- Section Two Start -->
+  <div class="section-two container d-md-flex align-items-center col-12 my-5">
+    <div class="col-12 col-md-7 pe-2 me-2 pe-md-5 me-md-5">
+      <h2 class="fw-bold text-black display-6">
+        Why Choose Techno Serve Solutions?
+      </h2>
+      <p class="text-black mb-md-4 pe-2 px-md-0 mx-md-0 our-font">
+        At Techno Serve Solutions, we offer comprehensive website maintenance,
+        including updates, security and bug fixes, speed optimization, and
+        uptime monitoring. Our services also feature regular backups, expert
+        advice, and easy-to-understand tech support for your peace of mind.
+      </p>
+      <div class="d-md-flex mb-4 text-start">
+        <div class="col-12 col-md-7 px-md-0 px-2">
+          <ul class="list-group">
+            <li>
+              <i class="fas fa-check list-group-content"></i>
+              <span class="fw-bold"> Website Updating </span>
+            </li>
+            <li>
+              <i class="fas fa-check list-group-content"></i><span
+                class="fw-bold"
+              >
+                Security and Bug Fixes
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-check list-group-content"></i>
+              <span class="fw-bold"> Speed and Uptime </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-7 px-md-0 px-2">
+          <ul class="list-group">
+            <li>
+              <i class="fas fa-check list-group-content"></i><span
+                class="fw-bold"
+              >
+                Expert Advice and Recommendations
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-check list-group-content"></i><span
+                class="fw-bold"
+              >
+                Regular Backups
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-check list-group-content"></i><span
+                class="fw-bold"
+              >
+                Plain-English Tech Support
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-5">
+      <img
+        src="/assets/img/service/why-choose-us.png"
+        alt="Why Choose Us"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+
+  <!-- Section Two End -->
+
+  <!-- Section Three Start -->
+  <div class="section-three">
+    <div class="row container h-auto py-2 py-md-5">
+      <div class="container content col-12 col-md-9 mx-md-5 mt-3 mt-md-0">
+        <h2 class="slider-heading our-heading fw-bold">
+          Our Website Maintenance Service Projects
+        </h2>
+        <p class="text-white our-font">
+          Explore our website maintenance service projects at Techno Serve
+          Solutions. We deliver tailored solutions, including updates, security
+          enhancements, and performance optimization, ensuring each project
+          meets high standards of efficiency and reliability.
+        </p>
+      </div>
+
+      <div class="blank col-3 d-none d-md-block"></div>
+    </div>
+
+    <div class="slider-section pb-5">
+      <SliderNew />
+    </div>
+  </div>
+  <!-- Section Three End -->
+
+  <!-- Section Four Start -->
+  <div class="section-four container d-md-flex align-items-center col-12 my-5">
+    <div class="container col-12 col-md-5">
+      <img
+        src="/assets/img/service/mobile-first-opti.png"
+        alt="Mobile First Optimization"
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-12 col-md-7 px-md-5 mx-md-5 px-2 mt-4 mt-md-0">
+      <h2 class="fw-bold text-black display-6">Get Started</h2>
+      <p class="text-black our-font">
+        Getting started with Techno Serve Solutions is simple. Our onboarding
+        process is designed to be hassle-free, allowing you to quickly set up
+        the maintenance services your website needs. For inquiries,
+        consultations, or to learn more about how we can help, don’t hesitate to
+        contact us. Secure your website’s future by partnering with Techno Serve
+        Solutions today.
+      </p>
+      <div class="d-flex justify-content-center justify-content-md-start">
+        <button class="btn section-four-btn mt-4 mx-md-0"
+          ><a
+            href="https://technoservesolutions.com/services/web-development/wordpress-development/"
+            class="text-white">WordPress Development</a
+          ><i class="fas fa-arrow-right"></i></button
+        >
+      </div>
+    </div>
+  </div>
+  <!-- Section Four End -->
+
+  <!-- Section Five Start -->
+  <div class="section-two container d-md-flex align-items-center col-12">
+    <div class="col-12 col-md-7 me-md-5 pe-md-5">
+      <h2 class="fw-bold text-black display-6">
+        Our Experts For Website Maintenance Services
+      </h2>
+      <p class="text-black mb-2 pe-2 me-md-5 pe-md-5 mb-md-4 our-font">
+        Techno Serve Solutions offers expert website maintenance services to
+        ensure your site runs smoothly and securely. Our team of professionals
+        specializes in regular updates, security checks, and performance
+        optimization, keeping your website up-to-date and efficient.
+      </p>
+      <div class="d-flex justify-content-center justify-content-md-start">
+        <button class="btn section-four-btn mt-4 mx-md-0"
+          ><a
+            href="https://technoservesolutions.com/contact/"
+            class="text-white">Contact Us</a
+          ><i class="fas fa-arrow-right"></i></button
+        >
+      </div>
+    </div>
+    <div class="col-12 col-md-5 mt-4 mt-md-0">
+      <div class="profile-grid">
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/anwar.png" alt="anwar" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/mubin.png" alt="mubin" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/sahil.png" alt="sahil" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/hussain.png" alt="hussain" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/samshad.png" alt="samshad" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/kaseem.png" alt="kaseem" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/ayann.png" alt="ayann" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/danial.png" alt="danial" />
+        </div>
+        <div class="profile-item">
+          <img src="/assets/img/service/OurTeam/ahmed.png" alt="ahmed" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Five End -->
+
+  <!-- Section Six Faq Section Start -->
+  <div class="section-six container">
+    <div class="faq-style-one service-faq mt-40">
+      <h2 class="mb-30 fw-bold"><b>Frequently Asked Questions</b></h2>
+      <div class="accordion mt--20" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What does Techno Serve Solutions’ Website Maintenance Service
+              include?
+            </button>
+          </h3>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p class="our-font">
+                Techno Serve Solutions offers comprehensive website maintenance
+                services that cover regular updates, security and bug fixes,
+                performance optimization, and uptime monitoring. Additionally,
+                we provide regular backups, expert advice, and plain-English
+                tech support to ensure your website runs smoothly and securely.
+              </p>
             </div>
           </div>
-
-          <div
-            class="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar"
-          >
-            <div class="single-widget services-list-widget">
-              <h4 class="widget-title">Services</h4>
-              <!-- <ul>
-                                {
-                                    Object.keys(serviceList).map((category) => {
-                                        // Check if the category matches the folderName
-                                        if (category === folderName) {
-                                            return (
-                                                <li>
-                                                    <ul>
-                                                        {Object.keys(
-                                                            serviceList[
-                                                                category
-                                                            ],
-                                                        ).map((service) => {
-                                                            // Filter out data according to JSON format
-                                                            if (
-                                                                serviceList[
-                                                                    category
-                                                                ][service] !==
-                                                                ""
-                                                            ) {
-                                                                return (
-                                                                    <li>
-                                                                        <a
-                                                                            href={
-                                                                                serviceList[
-                                                                                    category
-                                                                                ][
-                                                                                    service
-                                                                                ]
-                                                                            }
-                                                                        >
-                                                                            {service
-                                                                                .replace(
-                                                                                    /([A-Z])/g,
-                                                                                    " $1",
-                                                                                )
-                                                                                .replace(
-                                                                                    /^./,
-                                                                                    (
-                                                                                        str,
-                                                                                    ) =>
-                                                                                        str.toUpperCase(),
-                                                                                )}
-                                                                            <i class="fas fa-angle-right" />
-                                                                        </a>
-                                                                    </li>
-                                                                );
-                                                            }
-                                                            return null;
-                                                        })}
-                                                    </ul>
-                                                </li>
-                                            );
-                                        }
-                                        return null;
-                                    })
-                                }
-                            </ul> -->
-            </div>
-
-            <!-- End Single Widget -->
-            <div
-              class="single-widget quick-contact-widget text-light"
-              style="background-image: url(/assets/img/contact.png);"
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
             >
-              <div class="content">
-                <h3>Need Help?</h3>
-                <p>
-                  Speak with a human to filling out a form? call corporate
-                  office and we will connect.
-                </p>
-                <h2>+(44)7429 466754</h2>
-                <h4>
-                  <a href="mailto:info@digital.com"
-                    >info@technoservesolutions.com</a
-                  >
-                </h4>
-                <a class="btn mt-30 circle btn-sm btn-gradient" href="/contact"
-                  >Contact Us</a
-                >
-              </div>
+              Why should I choose Techno Serve Solutions for website
+              maintenance?
+            </button>
+          </h3>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p class="our-font">
+                Techno Serve Solutions provides a complete suite of website
+                maintenance services tailored to your needs. Our team ensures
+                your site remains up-to-date with the latest updates and
+                security patches, optimizes performance, and offers 24/7
+                support. Our clear and straightforward tech support and regular
+                backups give you peace of mind, allowing you to focus on your
+                business.
+              </p>
             </div>
-            <!-- Single Widget -->
-            <div class="single-widget widget-brochure">
-              <h4 class="widget-title">Brochure</h4>
-              <ul>
-                <li>
-                  <a href="#"
-                    ><i class="fas fa-file-pdf"></i> Download Brochure
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fas fa-file-pdf"></i> Company Details
-                  </a>
-                </li>
-              </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              How does Techno Serve Solutions handle website updates?
+            </button>
+          </h3>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p class="our-font">
+                We manage website updates by ensuring that all software and
+                plugins are current with the latest versions. This includes
+                applying updates to content management systems, themes, and any
+                third-party applications to keep your site functioning optimally
+                and securely.
+              </p>
             </div>
-            <!-- End Single Widget -->
+          </div>
+        </div>
+        <div class="accordion-item mb-5">
+          <h3 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              What measures do you take for website security and bug fixes?
+            </button>
+          </h3>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              <p class="our-font">
+                Our website maintenance service includes regular security checks
+                to identify and address vulnerabilities. We also implement bug
+                fixes to resolve any issues that may arise, ensuring your
+                website remains secure and functions correctly.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Section Six Faq Section End -->
+
+  <!-- Section Seven Start -->
+  <div class="container d-none d-md-block">
+    <div
+      class="section-seven h-100 rounded-3 d-md-flex align-items-center p-5 mb-5"
+    >
+      <div class="content col-12 col-md-6">
+        <h2 class="text-white display-6 fw-bold mt-2">
+          Tell us about your project
+        </h2>
+        <p class="text-white">
+          To find out more about our services and how we can <br /> help your business,
+          please get in touch.
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="d-md-flex email-section">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="form-control"
+          />
+          <button class="seven-btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- for mobile  -->
+  <div class="container section-seven-mobile d-md-none">
+    <div class="content">
+      <h2 class="text-white display-6 fw-bold">Tell us about your project</h2>
+      <p class="text-white">
+        To find out more about our services and how we can help your business,
+        please get in touch.
+      </p>
+      <div class="d-flex col-12 email-section-mobile mt-5">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="form-control"
+        />
+        <button>Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Seven End -->
+
   <!-- End Services Details Area -->
+
+  <style>
+    .breadcrumb-area {
+      /* margin-top: -50px; */
+    }
+    .breadcrumb-item {
+      /* margin-top: -50px; */
+    }
+    .section-three {
+      background-color: #282828;
+    }
+    .slider-heading {
+      color: #5c82ff;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 200px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      width: 60%;
+    }
+    .swiper-slide:nth-child(2n) {
+      /* width: 60%; */
+    }
+
+    .swiper-slide:nth-child(3n) {
+      /* width: 40%; */
+    }
+    .slider-section {
+      height: 80vh;
+    }
+    .our-heading {
+      font-size: 1.75rem;
+    }
+    .our-font {
+      font-size: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .slider-section {
+        height: 56vh;
+      }
+      .our-font {
+        font-size: 1rem;
+        color: black;
+      }
+      .our-heading {
+        font-size: 0.9rem;
+      }
+    }
+    .slider-section .swiper-content {
+      background-color: #282828;
+    }
+    .section-four-btn {
+      background-color: #8e66ff !important;
+    }
+    .section-seven {
+      background-image: url("/assets/img/service/article-section.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .section-seven-mobile {
+      width: 90%;
+      height: 500px;
+      background-image: url("/assets/img/service/article-section-mobile.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 13px;
+      margin-bottom: 2rem;
+      padding: 100px 20px;
+    }
+    .email-section {
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.329), white);
+      border-radius: 5px;
+      padding: 5px 5px 5px 5px;
+      border: white 1px solid;
+    }
+    .email-section-mobile {
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.329), white);
+      height: 50px;
+      border-radius: 10px;
+      /* padding: 5px 5px 5px 5px; */
+      border: white 1px solid;
+    }
+
+    .email-section input {
+      background-color: transparent;
+      border: none;
+    }
+    .email-section-mobile input {
+      background-color: transparent;
+      border: none;
+    }
+    .email-section-mobile button {
+      background-color: black;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      padding: 0px 20px 0px 20px;
+      padding-right: 40px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .email-section input:focus input:active {
+      background-color: transparent;
+      border: none;
+    }
+    .email-section input::placeholder {
+      color: #4e4e4e;
+      font-size: 1.3rem;
+    }
+    .email-section-mobile input::placeholder {
+      color: #4e4e4e;
+      font-size: 0.9rem;
+    }
+    .seven-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      /* padding: 10px 20px;  */
+      margin-right: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .seven-btn:hover {
+      background-color: #8e66ff !important;
+    }
+    .seven-btn:focus {
+      background-color: #8e66ff !important;
+    }
+    .list-group-content {
+      color: #8e66ff !important;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px; /* Adjust the gap between items */
+      padding: 20px; /* Optional, to add some padding around the grid */
+      max-width: 900px; /* Adjust width as needed */
+      margin: 0 auto; /* Center the grid horizontally */
+    }
+
+    .profile-item {
+      background-color: #000;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 2px solid #000; /* To match the rounded corners and frame */
+    }
+
+    .profile-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+  <script
+    is:inline
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script is:inline>
+    var Swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </Layout>
